@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vijos-p1000]]></title>
+    <url>%2F2019%2F09%2F27%2Fvijos-p1000%2F</url>
+    <content type="text"><![CDATA[P10001234567891011import java.io.IOException;import java.util.Scanner;public class Main &#123; public static void main(String[] args) throws IOException &#123; Scanner sc = new Scanner(System.in); int a = sc.nextInt(); int b = sc.nextInt(); System.out.println(a + b); &#125;&#125; 123456789101112#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;algorithm&gt; int main()&#123; int a,b; scanf("%d %d", &amp;a, &amp;b); printf("%d\n", a+b); return 0;&#125;]]></content>
+      <categories>
+        <category>每日一题</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[helloworld]]></title>
     <url>%2F2019%2F09%2F25%2Fhelloworld%2F</url>
     <content type="text"><![CDATA[print(“hello-world”)]]></content>
