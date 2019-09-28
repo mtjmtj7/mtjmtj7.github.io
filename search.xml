@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vijos-p1001]]></title>
+    <url>%2F2019%2F09%2F28%2Fvijos-p1001%2F</url>
+    <content type="text"><![CDATA[https://vijos.org/p/1001 123456789101112131415161718192021222324252627282930313233343536373839404142434445#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;algorithm&gt; struct student&#123; char name[20]; int cj1; int cj2; char a,b; int count;&#125;;int main()&#123; struct student xm[100]; int n,m,i; scanf("%d", &amp;m); for(i=0; i&lt;m; i++) scanf("%s %d %d %c %c %d", &amp;xm[i].name, &amp;xm[i].cj1, &amp;xm[i].cj2, &amp;xm[i].a, &amp;xm[i].b, &amp;xm[i].count); int max=0,allsum=0,sum; for(i=0; i&lt;m; i++) &#123; int sum=0; if(xm[i].cj1&gt;80 &amp;&amp; xm[i].count&gt;=1) sum+=8000; if(xm[i].cj1&gt;85 &amp;&amp; xm[i].cj2&gt;80) sum+=4000; if(xm[i].cj1&gt;90) sum+=2000; if(xm[i].cj1&gt;85 &amp;&amp; xm[i].b=='Y') sum+=1000; if(xm[i].cj2&gt;80 &amp;&amp; xm[i].a=='Y') sum+=850; allsum+=sum; if(max&lt;sum) &#123; max=sum; n=i; &#125; &#125; printf("%s\n%d\n%d\n",xm[n].name,max,allsum);&#125;]]></content>
+      <categories>
+        <category>每日一题</category>
+      </categories>
+      <tags>
+        <tag>ACM 每日一题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vijos-p1000]]></title>
     <url>%2F2019%2F09%2F27%2Fvijos-p1000%2F</url>
     <content type="text"><![CDATA[P10001234567891011import java.io.IOException;import java.util.Scanner;public class Main &#123; public static void main(String[] args) throws IOException &#123; Scanner sc = new Scanner(System.in); int a = sc.nextInt(); int b = sc.nextInt(); System.out.println(a + b); &#125;&#125; 123456789101112#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;algorithm&gt; int main()&#123; int a,b; scanf("%d %d", &amp;a, &amp;b); printf("%d\n", a+b); return 0;&#125;]]></content>
