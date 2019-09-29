@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vijos的训练计划-p1911]]></title>
+    <url>%2F2019%2F09%2F29%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1911%2F</url>
+    <content type="text"><![CDATA[https://vijos.org/p/1911a[]数字集，b[]结果集 验算a[i]+a[j] 把结果从b[]中消去（这里用-999 因为a[] b[]都是正整数。 代码123456789101112131415161718192021222324252627282930313233343536373839#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; using namespace std;int main()&#123; int n; scanf("%d",&amp;n); int a[105]; int b[105]; int cnt = 0; for(int i=0; i&lt;n; i++) &#123; scanf("%d",&amp;a[i]); b[i] = a[i]; &#125; sort(a,a+n); for(int i=0; i&lt;n; i++) &#123; for(int j=i+1; j&lt;n; j++) &#123; int tmp = a[i] + a[j]; for(int k=0; k&lt;n; k++) &#123; if(tmp == b[k]) &#123; cnt++; b[k] = -999; continue; &#125; &#125; &#125; &#125; printf("%d\n", cnt); return 0;&#125;]]></content>
+      <categories>
+        <category>Vijos的训练计划</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vijos的训练计划-p1848]]></title>
     <url>%2F2019%2F09%2F29%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1848%2F</url>
     <content type="text"><![CDATA[https://vijos.org/p/1848代码123456789101112131415161718192021222324252627282930#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; int numCount(int num, int check)&#123; int cnt = 0; while(num) &#123; if(num % 10 == check) cnt++; num /= 10; &#125; return cnt;&#125;int main()&#123; int n,c; scanf("%d %d",&amp;n,&amp;c); int cnt = 0; for(int i=1;i&lt;=n;i++) &#123; cnt += numCount(i,c); &#125; printf("%d\n",cnt); return 0;&#125;]]></content>
