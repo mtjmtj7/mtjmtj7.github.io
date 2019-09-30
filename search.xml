@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vijos的训练计划-p1772]]></title>
+    <url>%2F2019%2F09%2F30%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1772%2F</url>
+    <content type="text"><![CDATA[https://vijos.org/p/1772因为都是三位数，所以只需要判断100-999中 不包含0的数字。 我的思路是：取出来三个数的每一个数字，存到数组，排序，遍历， a[i]!=a[i+1] 并且a[0]!=0。 在遍历时只需要遍历100-999/3+1即可。 代码123456789101112131415161718192021222324252627282930313233#include&lt;bits/stdc++.h&gt;using namespace std;//判断数字交集 bool check(int a1, int a2, int a3)&#123; int n[10]; n[0] = a1%10; n[1]=a1/10%10;n[2]=a1/100%10; n[3] = a2%10; n[4]=a2/10%10;n[5]=a2/100%10; n[6] = a3%10; n[7]=a3/10%10;n[8]=a3/100%10; sort(n,n+9); int cnt = 0; for(int i=0;i&lt;9;i++) &#123; if(n[i] == n[i+1]) &#123; cnt++; break; &#125; &#125; if(cnt == 0 &amp;&amp; n[0] != 0) return true; else return false;&#125;int main()&#123; for(int i=100; i&lt;999/3+1; i++) &#123; if(check(i, i*2, i*3)) printf("%d %d %d\n",i, i*2, i*3); &#125; return 0;&#125;]]></content>
+      <categories>
+        <category>Vijos的训练计划</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vijos的训练计划-p1484]]></title>
     <url>%2F2019%2F09%2F29%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1484%2F</url>
     <content type="text"><![CDATA[https://vijos.org/p/1484代码123456789101112131415161718192021222324252627282930313233343536373839404142#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; using namespace std;int change(char c)&#123; return c-48;&#125;int main()&#123; char a[13]; scanf("%s",a);// printf("%d",'1'-48); int end = a[12] - 48; int num = change(a[0])*1+change(a[2])*2+change(a[3])*3+change(a[4])*4+change(a[6])*5+change(a[7])*6+change(a[8])*7+change(a[9])*8+ change(a[10])*9; if(num%11 == 10) &#123; if(a[12] == 'X') printf("Right"); else &#123; for(int i=0;i&lt;12;i++) printf("%c",a[i]); printf("X"); &#125; &#125; else &#123; if(num % 11 == end) printf("Right"); else &#123; for(int i=0;i&lt;12;i++) printf("%c",a[i]); printf("%d",num%11); &#125; &#125; return 0; &#125;]]></content>
