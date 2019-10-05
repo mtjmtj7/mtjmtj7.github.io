@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vijos的训练计划-p1097]]></title>
+    <url>%2F2019%2F10%2F05%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1097%2F</url>
+    <content type="text"><![CDATA[https://vijos.org/p/1097 要计算至少消耗多少体力，则求合并的最大值，每次让最小的两个合并得到的一定是最大值。这里我使用优先队列，每次出队两个，求和后放入队列，就可以保证每次取到的都是最小的两个 代码12345678910111213141516171819202122232425262728#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; cin&gt;&gt;n; int tmp; priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt; &gt; a; for(int i=0;i&lt;n;i++) &#123; cin&gt;&gt;tmp; a.push(tmp); &#125; int sum = 0; while(!a.empty()) &#123; int x1,x2; x1=a.top(); a.pop(); if(a.empty()) break;//最后一步 x2=a.top(); a.pop(); a.push(x1+x2); sum+=(x1+x2); &#125; cout&lt;&lt;sum&lt;&lt;endl; return 0;&#125;]]></content>
+      <categories>
+        <category>Vijos的训练计划</category>
+      </categories>
+      <tags>
+        <tag>Vijos的训练计划</tag>
+        <tag>ACM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vijos的训练计划-p1409]]></title>
     <url>%2F2019%2F10%2F04%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1409%2F</url>
     <content type="text"><![CDATA[https://vijos.org/p/1409贪心。排序之后设置头尾指针，左右相加大于最大值则右边单独分组，否则两个一组。 代码123456789101112131415161718192021222324252627282930#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int m; int n; int a[30005]; cin&gt;&gt;m&gt;&gt;n; for(int i=0; i&lt;n ;i++) cin&gt;&gt;a[i]; sort(a, a+n); int cnt = 0; int i=0,j=n-1; while(i &lt;= j) &#123; if(a[i] + a[j] &lt;= m) &#123; i++; j--; cnt++; &#125; else &#123; j--; cnt++; &#125; &#125; cout&lt;&lt;cnt; return 0;&#125;]]></content>
