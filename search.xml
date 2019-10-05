@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vijos的训练计划-p1316]]></title>
+    <url>%2F2019%2F10%2F05%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1316%2F</url>
+    <content type="text"><![CDATA[https://vijos.org/p/1316 排序去重。 代码123456789101112131415161718192021222324#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; int a[105]; cin&gt;&gt;n; for(int i=0;i&lt;n;i++) cin&gt;&gt;a[i]; sort(a,a+n); int cnt = 0; int b[105]; for(int i=0;i&lt;n;i++) &#123; if(a[i]!=a[i+1]) &#123; b[cnt++]=a[i]; &#125; &#125; cout&lt;&lt;cnt&lt;&lt;endl; for(int i=0;i&lt;cnt;i++) cout&lt;&lt;b[i]&lt;&lt;&quot; &quot;; return 0;&#125;]]></content>
+      <categories>
+        <category>Vijos的训练计划</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vijos的训练计划-p1097]]></title>
     <url>%2F2019%2F10%2F05%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1097%2F</url>
     <content type="text"><![CDATA[https://vijos.org/p/1097 要计算至少消耗多少体力，则求合并的最大值，每次让最小的两个合并得到的一定是最大值。这里我使用优先队列，每次出队两个，求和后放入队列，就可以保证每次取到的都是最小的两个 代码12345678910111213141516171819202122232425262728#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; cin&gt;&gt;n; int tmp; priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt; &gt; a; for(int i=0;i&lt;n;i++) &#123; cin&gt;&gt;tmp; a.push(tmp); &#125; int sum = 0; while(!a.empty()) &#123; int x1,x2; x1=a.top(); a.pop(); if(a.empty()) break;//最后一步 x2=a.top(); a.pop(); a.push(x1+x2); sum+=(x1+x2); &#125; cout&lt;&lt;sum&lt;&lt;endl; return 0;&#125;]]></content>
@@ -8,8 +20,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -20,8 +32,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -32,8 +44,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -44,8 +56,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -67,8 +79,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -79,8 +91,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -91,8 +103,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -103,8 +115,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -126,8 +138,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
