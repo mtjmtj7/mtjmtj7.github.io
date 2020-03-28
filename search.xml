@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Docker使用记录]]></title>
-    <url>%2F2020%2F03%2F20%2FDocker%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[(没有服务器的穷逼只能用Docker来艰难维持生活)Dockerdocker pull docker pull &lt;镜像&gt; 用来拉去一个镜像 docker images docker images 显示拉取的所有镜像 docker run以下命令使用 ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器： docker run -it ubuntu /bin/bash 参数说明： -i: 交互式操作。 -t: 终端。 -d: 后台运行 ubuntu: ubuntu 镜像。 /bin/bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash。 docker attach在使用 -d 时，可以通过 docker attach 进入容器 docker exec退出终端不会导致容器停止]]></content>
+    <title><![CDATA[资源站解析接口]]></title>
+    <url>%2F2020%2F03%2F28%2F%E8%B5%84%E6%BA%90%E7%AB%99%E8%A7%A3%E6%9E%90%E6%8E%A5%E5%8F%A3%2F</url>
+    <content type="text"><![CDATA[OK资源网 http://www.okzyw.com/help/#JSONAPI 返回的json，简单易懂JSON API接口详情 【API接口说明】采集地址：https://api.okzy.tv/api.php/provide/vod/at/json/视频列表地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=list&amp;wd=视频详情地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=detail&amp;ids= 解析口传入url可以直接在线播放 DP播放器解析接口： https://www.dplayer.tv/dp/?url=CK播放器解析接口： https://www.dplayer.tv/?url= 通用采集接口，备用。采集通用备用接口： https://api.okzy.tv/api.php/provide/vod/at/xml/ 麻花资源网 http://mahuazy.net/help/#SeaCms 查询接口https://mhapi123.com/inc/ldg_api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/ldg_api_kuyun.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/feifei3_all/?ac=list&amp;wd= 返回json，同ok资源网 以上仅限查询结果，具体详情接口未完待续。]]></content>
       <categories>
-        <category>Docker</category>
+        <category>Other</category>
       </categories>
       <tags>
-        <tag>Docker</tag>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MUI使用笔记]]></title>
+    <url>%2F2020%2F03%2F26%2FMUI%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[打开子页面 plus.webview.open(‘html/new-webview.html’, ‘new’, {}, ‘slide-in-right’, 200);]]></content>
+      <categories>
+        <category>MUI</category>
+      </categories>
+      <tags>
+        <tag>MUI</tag>
       </tags>
   </entry>
   <entry>
@@ -30,8 +41,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -42,8 +53,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -54,8 +65,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -66,8 +77,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -78,8 +89,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -101,8 +112,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -113,8 +124,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -125,8 +136,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -137,8 +148,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
@@ -160,8 +171,8 @@
         <category>Vijos的训练计划</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
         <tag>ACM</tag>
+        <tag>Vijos的训练计划</tag>
       </tags>
   </entry>
   <entry>
