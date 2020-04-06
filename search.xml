@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[SpringBoot Layui Table解析重复数据undefined]]></title>
+    <url>%2F2020%2F04%2F06%2FSpringBoot-Layui-Table%E8%A7%A3%E6%9E%90%E9%87%8D%E5%A4%8D%E6%95%B0%E6%8D%AEundefined%2F</url>
+    <content type="text"><![CDATA[问题在使用Layui-table解析重复数据时，比如现有两个 aaa 记录![](http://media.mtjmtj7.cn/images/2020-04-06 14:58:10_586c23ae-0d0a-48a0-9838-12c975dbd642.jpg)table解析如下![](http://media.mtjmtj7.cn/images/2020-04-06 14:59:28_0a41700b-878d-444c-8c19-f1ea0852f700.jpg) 这时第二条aaa的记录会显示undefined（这里显示了nickname）如图 ![](http://media.mtjmtj7.cn/images/2020-04-06 15:01:03_fff57694-f281-4415-b243-33e589e93bcf.jpg) 解决方案![](http://media.mtjmtj7.cn/images/2020-04-06 15:02:43_2a000d5c-de34-4c2b-aa4a-d7243b50a640.jpg) ![](http://media.mtjmtj7.cn/images/2020-04-06 15:03:41_3a6fa0b1-67b7-4d13-abf7-196c1bc21cdd.jpg)]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
+        <tag>Layui</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[资源站解析接口]]></title>
     <url>%2F2020%2F03%2F28%2F%E8%B5%84%E6%BA%90%E7%AB%99%E8%A7%A3%E6%9E%90%E6%8E%A5%E5%8F%A3%2F</url>
-    <content type="text"><![CDATA[OK资源网 http://www.okzyw.com/help/#JSONAPI 返回的json，简单易懂JSON API接口详情 【API接口说明】采集地址：https://api.okzy.tv/api.php/provide/vod/at/json/视频列表地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=list&amp;wd=视频详情地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=detail&amp;ids= 解析口传入url可以直接在线播放 DP播放器解析接口： https://www.dplayer.tv/dp/?url=CK播放器解析接口： https://www.dplayer.tv/?url= 通用采集接口，备用。采集通用备用接口： https://api.okzy.tv/api.php/provide/vod/at/xml/ 麻花资源网 http://mahuazy.net/help/#SeaCms 查询接口https://mhapi123.com/inc/ldg_api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/ldg_api_kuyun.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/feifei3_all/?ac=list&amp;wd= 返回json，同ok资源网 以上仅限查询结果，具体详情接口未完待续。]]></content>
+    <content type="text"><![CDATA[OK资源网 http://www.okzyw.com/help/#JSONAPI 返回的json，简单易懂，强推JSON API接口详情 【API接口说明】采集地址：https://api.okzy.tv/api.php/provide/vod/at/json/视频列表地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=list&amp;wd=视频详情地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=detail&amp;ids= 解析口传入url可以直接在线播放 DP播放器解析接口： https://www.dplayer.tv/dp/?url=CK播放器解析接口： https://www.dplayer.tv/?url= 通用采集接口，备用。采集通用备用接口： https://api.okzy.tv/api.php/provide/vod/at/xml/ 麻花资源网 http://mahuazy.net/help/#SeaCms 查询接口https://mhapi123.com/inc/ldg_api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/ldg_api_kuyun.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/feifei3_all/?ac=list&amp;wd= 返回json，同ok资源网 以上仅限查询结果，具体详情接口未完待续。]]></content>
       <categories>
         <category>Other</category>
       </categories>
