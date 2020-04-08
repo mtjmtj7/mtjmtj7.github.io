@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[layui upload后台接收不到参数]]></title>
+    <url>%2F2020%2F04%2F08%2Flayui-upload%E5%90%8E%E5%8F%B0%E6%8E%A5%E6%94%B6%E4%B8%8D%E5%88%B0%E5%8F%82%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[在使用官网upload组件上传文件时，data为可附带上传参数。 明明之前都可以…现在玄学bug 解决： 在before参数中： 1234before: function(obj)&#123; layer.load(); //上传loading this.data=&#123;&apos;xxx&apos;:&apos;xxx&apos;&#125;;&#125;]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Layui</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SpringBoot Layui Table解析重复数据undefined]]></title>
     <url>%2F2020%2F04%2F06%2FSpringBoot-Layui-Table%E8%A7%A3%E6%9E%90%E9%87%8D%E5%A4%8D%E6%95%B0%E6%8D%AEundefined%2F</url>
     <content type="text"><![CDATA[问题在使用Layui-table解析重复数据时，比如现有两个 aaa 记录 table解析如下 这时第二条aaa的记录会显示undefined（这里显示了nickname）如图 解决方案]]></content>
