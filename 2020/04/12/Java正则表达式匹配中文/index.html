@@ -57,14 +57,19 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="mtjmtj7">
-<meta property="og:url" content="https://mtjmtj7.github.io/categories/C/index.html">
+  <meta name="description" content="Java正则表达式匹配中文">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java正则表达式匹配中文">
+<meta property="og:url" content="https://mtjmtj7.github.io/2020/04/12/Java正则表达式匹配中文/index.html">
 <meta property="og:site_name" content="mtjmtj7">
+<meta property="og:description" content="Java正则表达式匹配中文">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-04-12T08:36:33.652Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mtjmtj7">
-  <link rel="canonical" href="https://mtjmtj7.github.io/categories/C/">
+<meta name="twitter:title" content="Java正则表达式匹配中文">
+<meta name="twitter:description" content="Java正则表达式匹配中文">
+  <link rel="canonical" href="https://mtjmtj7.github.io/2020/04/12/Java正则表达式匹配中文/">
 
 
 <script id="page-configurations">
@@ -72,13 +77,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>分类: C++ | mtjmtj7</title>
+  <title>Java正则表达式匹配中文 | mtjmtj7</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -243,348 +248,173 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block category">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">C++<small>分类</small>
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://mtjmtj7.github.io/2020/04/12/Java正则表达式匹配中文/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="mtjmtj7">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://media.mtjmtj7.cn/273027783.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mtjmtj7">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Java正则表达式匹配中文
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-04-12 16:32:13 / 修改时间：16:36:33" itemprop="dateCreated datePublished" datetime="2020-04-12T16:32:13+08:00">2020-04-12</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>1 分钟</span>
+            </span>
+          
+            <div class="post-description">Java正则表达式匹配中文</div>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">String regEx = &quot;[\\u4e00-\\u9fa5]&quot;;</span><br><span class="line">Pattern pattern = Pattern.compile(regEx);</span><br><span class="line">Matcher matcher = pattern.matcher(str);</span><br><span class="line">String titltTmp = &quot;&quot;;</span><br><span class="line">while (matcher.find())&#123;</span><br><span class="line">	titltTmp += matcher.group();</span><br><span class="line">&#125;</span><br><span class="line">first.setTitle(titltTmp);</span><br></pre></td></tr></table></figure><a id="more"></a>
 
-  
-  
+<p>另附常用正则表达式</p>
+<p>中文</p>
+<blockquote>
+<p>/\p{Han}/u</p>
+</blockquote>
+<p>英文和数字</p>
+<blockquote>
+<p>/^[A-Za-z0-9]+$/</p>
+</blockquote>
+<p>整数</p>
+<blockquote>
+<p>/^-?[1-9]\d*$/</p>
+</blockquote>
+<p>数值（包括浮点数</p>
+<blockquote>
+<p>/^-?(\d+.\d+|[1-9]d*|0)$/</p>
+</blockquote>
+<p>双字节字符</p>
+<blockquote>
+<p> /[^\x00-\xff]/</p>
+</blockquote>
+<p>Email</p>
+<blockquote>
+<p>/^(([^&lt;&gt;()[]\.,;:\s@”]+(.[^&lt;&gt;()[]\.,;:\s@”]+)*)|(“.+”))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/</p>
+</blockquote>
+<p>手机号</p>
+<blockquote>
+<p>/^1[345678]\d{9}$/</p>
+</blockquote>
+<p>时间</p>
+<blockquote>
+<p>/^\d{4}[/.-]\d{1,2}[/.-]\d{1,2}(?:\s\d{1,2}:\d{1,2}:\d{1,2})?$/</p>
+</blockquote>
+<p>身份证</p>
+<blockquote>
+<p>/^[1-9]\d{5}(?:18|19|20)\d{2}(?:(?:0[1-9])|(?:1[0-2]))(?:(?:[0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/</p>
+</blockquote>
 
-  
+    </div>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/2019/10/05/Vijos的训练计划-p1316/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1316</span>
-          </a>
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Java/" rel="tag"># Java</a>
+            
+          </div>
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-05T11:40:02+08:00"
-              content="2019-10-05">
-          10-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/10/05/Vijos的训练计划-p1097/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1097</span>
-          </a>
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2020/04/08/layui-upload后台接收不到参数/" rel="next" title="layui upload后台接收不到参数">
+                  <i class="fa fa-chevron-left"></i> layui upload后台接收不到参数
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-05T11:15:05+08:00"
-              content="2019-10-05">
-          10-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/04/Vijos的训练计划-p1409/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1409</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-04T10:45:49+08:00"
-              content="2019-10-04">
-          10-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/03/Vijos的训练计划-p1123/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1123</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-03T11:15:17+08:00"
-              content="2019-10-03">
-          10-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/02/Vijos的训练计划-p1691/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1691</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-02T21:07:14+08:00"
-              content="2019-10-02">
-          10-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/30/Vijos的训练计划-p1772/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1772</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-30T20:35:39+08:00"
-              content="2019-09-30">
-          09-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/29/Vijos的训练计划-p1484/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1484</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-29T19:30:34+08:00"
-              content="2019-09-29">
-          09-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/29/Vijos的训练计划-p1911/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1911</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-29T16:02:45+08:00"
-              content="2019-09-29">
-          09-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/29/Vijos的训练计划-p1848/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1848</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-29T14:42:49+08:00"
-              content="2019-09-29">
-          09-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/28/Vijos的训练计划-p1001/" itemprop="url">
-            <span itemprop="name">Vijos的训练计划-p1001</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-28T19:35:53+08:00"
-              content="2019-09-28">
-          09-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    </div>
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/categories/C/page/2/">2</a><a class="extend next" rel="next" href="/categories/C/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -603,6 +433,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
