@@ -47,6 +47,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[奇怪的操作]]></title>
+    <url>%2F2020%2F03%2F28%2F%E5%A5%87%E6%80%AA%E7%9A%84%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[添加、删除注册表添加鼠标右键菜单新建文本，将以下脚本复制到文本中，另存为Install.bat，双击打开Install.bat即可12345reg add &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%1\&quot;&quot; /freg add &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /freg add &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /f 删除鼠标右键菜单操作同上，另存为Uninstall.bat，命令如下： 1234reg delete &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here&quot; /f 其中 Open Fluent Terminal here 是右键显示文字，如果出现中文乱码，regedit 打开注册表编辑器 ，复制路径修改即可。]]></content>
+      <categories>
+        <category>Other</category>
+      </categories>
+      <tags>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MUI使用笔记]]></title>
     <url>%2F2020%2F03%2F26%2FMUI%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[打开子页面 plus.webview.open(‘html/new-webview.html’, ‘new’, {}, ‘slide-in-right’, 200);]]></content>
