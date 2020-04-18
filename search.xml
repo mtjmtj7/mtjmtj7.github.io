@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[奇怪的操作]]></title>
+    <url>%2F2020%2F04%2F18%2F%E5%A5%87%E6%80%AA%E7%9A%84%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[添加、删除注册表添加鼠标右键菜单新建文本，将以下脚本复制到文本中，另存为Install.bat，双击打开Install.bat即可12345reg add &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%1\&quot;&quot; /freg add &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /freg add &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /f 删除鼠标右键菜单操作同上，另存为Uninstall.bat，命令如下： 1234reg delete &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here&quot; /f 其中 Open Fluent Terminal here 是右键显示文字，如果出现中文乱码，regedit 打开注册表编辑器 ，复制路径修改即可。]]></content>
+      <categories>
+        <category>Other</category>
+      </categories>
+      <tags>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java正则表达式匹配中文]]></title>
     <url>%2F2020%2F04%2F12%2FJava%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E4%B8%AD%E6%96%87%2F</url>
     <content type="text"><![CDATA[提取中文12345678String regEx = &quot;[\\u4e00-\\u9fa5]&quot;;Pattern pattern = Pattern.compile(regEx);Matcher matcher = pattern.matcher(str);String titltTmp = &quot;&quot;;while (matcher.find())&#123; titltTmp += matcher.group();&#125;first.setTitle(titltTmp); 提取数字 12String result = Pattern.compile(&quot;[^0-9]&quot;).matcher(su).replaceAll(&quot;&quot;).trim();int su1=Integer.valueOf(result);]]></content>
@@ -39,17 +50,6 @@
     <title><![CDATA[资源站解析接口]]></title>
     <url>%2F2020%2F03%2F28%2F%E8%B5%84%E6%BA%90%E7%AB%99%E8%A7%A3%E6%9E%90%E6%8E%A5%E5%8F%A3%2F</url>
     <content type="text"><![CDATA[OK资源网 http://www.okzyw.com/help/#JSONAPI 返回的json，简单易懂，强推JSON API接口详情 【API接口说明】采集地址：https://api.okzy.tv/api.php/provide/vod/at/json/视频列表地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=list&amp;wd=视频详情地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=detail&amp;ids= 解析口传入url可以直接在线播放 DP播放器解析接口： https://www.dplayer.tv/dp/?url=CK播放器解析接口： https://www.dplayer.tv/?url= 通用采集接口，备用。采集通用备用接口： https://api.okzy.tv/api.php/provide/vod/at/xml/ 麻花资源网 http://mahuazy.net/help/#SeaCms 查询接口https://mhapi123.com/inc/ldg_api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/ldg_api_kuyun.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/feifei3_all/?ac=list&amp;wd= 返回json，同ok资源网 以上仅限查询结果，具体详情接口未完待续。 卧龙资源网http://vodsee.com/help 查询接口返回json，参数同ok资源网 https://cj.wlzy.tv/api/provide/vod/?ac=list&amp;wd= 返回json https://cj.wlzy.tv/api/macs/vod/?ac=list&amp;wd= 返回json 详情接口https://cj.wlzy.tv/api/provide/vod/?ac=detail&amp;ids=349519 返回json https://cj.wlzy.tv/api/macs/vod/?ac=detail&amp;ids=349519 返回json]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[奇怪的操作]]></title>
-    <url>%2F2020%2F03%2F28%2F%E5%A5%87%E6%80%AA%E7%9A%84%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[添加、删除注册表添加鼠标右键菜单新建文本，将以下脚本复制到文本中，另存为Install.bat，双击打开Install.bat即可12345reg add &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%1\&quot;&quot; /freg add &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /freg add &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /f 删除鼠标右键菜单操作同上，另存为Uninstall.bat，命令如下： 1234reg delete &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here&quot; /f 其中 Open Fluent Terminal here 是右键显示文字，如果出现中文乱码，regedit 打开注册表编辑器 ，复制路径修改即可。]]></content>
       <categories>
         <category>Other</category>
       </categories>
