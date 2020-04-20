@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[质因数分解]]></title>
-    <url>%2F2020%2F04%2F20%2F%E8%B4%A8%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[题目描述已知正整数nn是两个不同的质数的乘积，试求出两者中较大的那个质数。输入格式一个正整数nn。输出格式一个正整数pp，即较大的那个质数。输入输出样例输入 #1复制121输出 #1复制17说明/提示n&lt;=2×10的9次方NOIP 2012 普及组 第一题题目已知 n是两个质因数乘积，所以从2开始计算（此处不用判断i是否为质数，i肯定不是合数。 当n%i==0时，i最小 n/i最大 12345678910111213141516#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; long long int n,i; cin&gt;&gt;n; for(i=2; i&lt;n; i++) &#123; if(n%i==0) &#123; cout&lt;&lt;n/i; break; &#125; &#125; return 0;&#125;]]></content>
+    <title><![CDATA[P1150-Peter的烟]]></title>
+    <url>%2F2020%2F04%2F20%2FP1150-Peter%E7%9A%84%E7%83%9F%2F</url>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1150题目描述Peter 有 nn 根烟，他每吸完一根烟就把烟蒂保存起来，k(k&gt;1)k(k&gt;1)个烟蒂可以换一个新的烟，那么 Peter 最终能吸到多少根烟呢？输入格式每组测试数据一行包括两个整数 n, kn,k（1 &lt; n, k \le 10^81&lt;n,k≤108）。 输出格式对于每组测试数据，输出一行包括一个整数表示最终烟的根数。 输入输出样例输入 #1复制 14 3 输出 #1复制 15 输入 #2复制 110 3 输出 #2复制 114 说明/提示对于 100%100% 的数据，1&lt;n, k \le 10^81&lt;n,k≤108。 123456789101112131415161718192021222324#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n,k; cin&gt;&gt;n&gt;&gt;k; int xi = 0; int sum = 0; while(n&gt;0) &#123; xi++; //吸一根，用于兑换计数 sum++; //吸一根 n--; //少一根 if(xi==k) //够数了 &#123; n++; //换一根 xi=0; //计数器重置 &#125; &#125; cout&lt;&lt;sum; return 0;&#125;]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[P1146-翻转硬币]]></title>
+    <url>%2F2020%2F04%2F20%2FP1146-%E7%BF%BB%E8%BD%AC%E7%A1%AC%E5%B8%81%2F</url>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1146题目描述在桌面上有一排硬币，共NN枚，每一枚硬币均为正面朝上。现在要把所有的硬币翻转成反面朝上，规则是每次可翻转任意N-1N−1枚硬币（正面向上的被翻转为反面向上，反之亦然）。求一个最短的操作序列（将每次翻转N-1枚硬币成为一次操作）。 输入格式一个自然数NN（NN为不大于100100的偶数）。 输出格式第一行包含一个整数SS，表示最少需要的操作次数。接下来的SS行每行分别表示每次操作后桌上硬币的状态（一行包含NN个整数（00或11），表示每个硬币的状态：00――正面向上，和11――反面向上，不允许出现多余空格）。 对于有多种操作方案的情况，则只需操作的字典序最小输出一种。 注：操作的字典序：对于一次操作，1表示翻转，0表示不反转。 但是需要你输出的是每一次操作完的状态，0表示正面朝上，1表示反面朝上。 输入输出样例输入 #1 14 输出 #1 1234540111110000011111 https://blog.csdn.net/qq_40170282/article/details/83305244 思路：第i次翻转第i个不改变，其他翻转]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[P1116-车厢重组]]></title>
+    <url>%2F2020%2F04%2F20%2FP1116-%E8%BD%A6%E5%8E%A2%E9%87%8D%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1116题目描述在一个旧式的火车站旁边有一座桥，其桥面可以绕河中心的桥墩水平旋转。一个车站的职工发现桥的长度最多能容纳两节车厢，如果将桥旋转180180度，则可以把相邻两节车厢的位置交换，用这种方法可以重新排列车厢的顺序。于是他就负责用这座桥将进站的车厢按车厢号从小到大排列。他退休后，火车站决定将这一工作自动化，其中一项重要的工作是编一个程序，输入初始的车厢顺序，计算最少用多少步就能将车厢排序。 输入格式共两行。 第一行是车厢总数N( \le 10000)N(≤10000)。 第二行是NN个不同的数表示初始的车厢顺序。 输出格式一个整数，最少的旋转次数。 输入输出样例输入 #1 1244 3 2 1 输出 #1 16 说明/提示求逆序数 1234567891011121314151617181920#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; int a[10005]; cin&gt;&gt;n; for(int i=0;i&lt;n;i++) cin&gt;&gt;a[i]; int sum=0; for(int i=0; i&lt;n; i++) &#123; for(int j=i; j&lt;n; j++) &#123; if(a[j]&lt;a[i]) sum++; &#125; &#125; cout&lt;&lt;sum; return 0;&#125;]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[P1075-质因数分解]]></title>
+    <url>%2F2020%2F04%2F20%2FP1075-%E8%B4%A8%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1075题目描述已知正整数nn是两个不同的质数的乘积，试求出两者中较大的那个质数。输入格式一个正整数nn。输出格式一个正整数pp，即较大的那个质数。输入输出样例输入 #1复制121输出 #1复制17说明/提示n&lt;=2×10的9次方 NOIP 2012 普及组 第一题 题目已知 n是两个质因数乘积，所以从2开始计算（此处不用判断i是否为质数，i肯定不是合数。 当n%i==0时，i最小 n/i最大 12345678910111213141516#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; long long int n,i; cin&gt;&gt;n; for(i=2; i&lt;n; i++) &#123; if(n%i==0) &#123; cout&lt;&lt;n/i; break; &#125; &#125; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
@@ -53,8 +86,8 @@
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>Layui</tag>
         <tag>SpringBoot</tag>
+        <tag>Layui</tag>
       </tags>
   </entry>
   <entry>
