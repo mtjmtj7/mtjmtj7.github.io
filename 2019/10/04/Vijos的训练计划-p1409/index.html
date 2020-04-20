@@ -252,10 +252,16 @@
             
 
   <div id="posts" class="posts-expand">
-      <article itemscope itemtype="http://schema.org/Article">
+    
+  <article itemscope itemtype="http://schema.org/Article">
   
   
   
+  <% if (page.top) { %>
+  <i class="fa fa-thumb-tack"></i>
+  <font color=7D26CD>置顶</font>
+  <span class="post-meta-divider">|</span>
+<% } %>
   <div class="post-block post">
     <link itemprop="mainEntityOfPage" href="https://mtjmtj7.github.io/2019/10/04/Vijos的训练计划-p1409/">
 
