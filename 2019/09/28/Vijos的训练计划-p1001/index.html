@@ -257,11 +257,7 @@
   
   
   
-  <% if (page.top) { %>
-  <i class="fa fa-thumb-tack"></i>
-  <font color=7D26CD>置顶</font>
-  <span class="post-meta-divider">|</span>
-<% } %>
+
   <div class="post-block post">
     <link itemprop="mainEntityOfPage" href="https://mtjmtj7.github.io/2019/09/28/Vijos的训练计划-p1001/">
 
@@ -281,6 +277,11 @@
         </h1>
 
         <div class="post-meta">
+		<% if (page.top) { %>
+		  <i class="fa fa-thumb-tack"></i>
+		  <font color=7D26CD>置顶</font>
+		  <span class="post-meta-divider">|</span>
+		<% } %>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
