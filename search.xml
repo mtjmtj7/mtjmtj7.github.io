@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[P1317-低洼地]]></title>
+    <url>%2F2020%2F04%2F24%2FP1317-%E4%BD%8E%E6%B4%BC%E5%9C%B0%2F</url>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1317 数据保证了首尾都是0 ，所以在开始下降时设置标记位，开始上升时标记结束。 123456789101112131415161718192021222324252627#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; cin&gt;&gt;n; int l=0, a=0, b; int cnt = 0; for(int i=1; i&lt;=n; i++) &#123; cin&gt;&gt;b; if(b &lt; a) &#123; //开始下降 l=1; &#125; if(b&gt;a &amp;&amp; l==1) &#123; //一个区间 l=0; cnt++; &#125; a = b; &#125; cout&lt;&lt;cnt; return 0;&#125;]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[P1150-Peter的烟]]></title>
     <url>%2F2020%2F04%2F20%2FP1150-Peter%E7%9A%84%E7%83%9F%2F</url>
     <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1150题目描述Peter 有 nn 根烟，他每吸完一根烟就把烟蒂保存起来，k(k&gt;1)k(k&gt;1)个烟蒂可以换一个新的烟，那么 Peter 最终能吸到多少根烟呢？输入格式每组测试数据一行包括两个整数 n, kn,k（1 &lt; n, k \le 10^81&lt;n,k≤108）。 输出格式对于每组测试数据，输出一行包括一个整数表示最终烟的根数。 输入输出样例输入 #1复制 14 3 输出 #1复制 15 输入 #2复制 110 3 输出 #2复制 114 说明/提示对于 100%100% 的数据，1&lt;n, k \le 10^81&lt;n,k≤108。 123456789101112131415161718192021222324#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n,k; cin&gt;&gt;n&gt;&gt;k; int xi = 0; int sum = 0; while(n&gt;0) &#123; xi++; //吸一根，用于兑换计数 sum++; //吸一根 n--; //少一根 if(xi==k) //够数了 &#123; n++; //换一根 xi=0; //计数器重置 &#125; &#125; cout&lt;&lt;sum; return 0;&#125;]]></content>
