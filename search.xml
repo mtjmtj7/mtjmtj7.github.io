@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA['资源库']]></title>
+    <title><![CDATA[资源库]]></title>
     <url>%2F2020%2F08%2F05%2F%E8%B5%84%E6%BA%90%E5%BA%93%2F</url>
-    <content type="text"><![CDATA[在线文本转语音 https://mtjmtj7.lanzous.com/icamefbsj2f 随机字符生成器 https://mtjmtj7.lanzous.com/irPVDfbsj4h VIP视频解析 https://mtjmtj7.lanzous.com/iN6mifbsj5i https://mtjmtj7.lanzous.com/icamefbsj2f]]></content>
+    <content type="text"><![CDATA[在线文本转语音 https://mtjmtj7.lanzous.com/icamefbsj2f 随机字符生成器 https://mtjmtj7.lanzous.com/irPVDfbsj4h VIP视频解析 https://mtjmtj7.lanzous.com/iN6mifbsj5i]]></content>
       <categories>
         <category>Other</category>
       </categories>
       <tags>
         <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Python使用笔记]]></title>
-    <url>%2F2020%2F05%2F17%2FPython%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[json相关 12&gt; r = requests.get(url).json()&gt; 返回dictdict中的value为strstr转dict（t是严格的json格式 json.loads(t) 定时任务12345678910111213141516171819202122232425262728293031323334353637383940#BlockingScheduler定时任务from apscheduler.schedulers.blocking import BlockingSchedulerfrom datetime import datetime首先看看周一到周五定时执行任务# 输出时间def job(): print(datetime.now().strtime(&quot;%Y-%m-%d %H:%M:%S&quot;))# BlockingSchedulerscheduler = BlockingScheduler()scheduler.add_job(job, &quot;cron&quot;， day_of_week=&quot;1-5&quot;, hour=6, minute=30)scheduler .start()scheduler.add_job(job, &apos;cron&apos;, hour=1, minute=5)hour =19 , minute =23 这里表示每天的19：23 分执行任务hour =&apos;19&apos;, minute =&apos;23&apos; 这里可以填写数字，也可以填写字符串hour =&apos;19-21&apos;, minute= &apos;23&apos; 表示 19:23、 20:23、 21:23 各执行一次任务#每300秒执行一次scheduler .add_job(job, &apos;interval&apos;, seconds=300)#在1月,3月,5月,7-9月，每天的下午2点，每一分钟执行一次任务scheduler .add_job(func=job, trigger=&apos;cron&apos;, month=&apos;1,3,5,7-9&apos;, day=&apos;*&apos;, hour=&apos;14&apos;, minute=&apos;*&apos;)# 当前任务会在 6、7、8、11、12 月的第三个周五的 0、1、2、3 点执行scheduler .add_job(job, &apos;cron&apos;, month=&apos;6-8,11-12&apos;, day=&apos;3rd fri&apos;, hour=&apos;0-3&apos;)#从开始时间到结束时间，每隔俩小时运行一次scheduler .add_job(job, &apos;interval&apos;, hours=2, start_date=&apos;2018-01-10 09:30:00&apos;, end_date=&apos;2018-06-15 11:00:00&apos;)#自制定时器 from datetime import datetime import time # 每n秒执行一次 def timer(n): while True: print(datetime.now().strftime(&quot;%Y-%m-%d %H:%M:%S&quot;)) time.sleep(n)timer(5) 来自 https://blog.csdn.net/lipachong/article/details/99962134]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
