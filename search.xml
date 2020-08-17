@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[win10卸载FluentTerminal]]></title>
+    <url>%2F2020%2F08%2F17%2Fwin10%E5%8D%B8%E8%BD%BDFluentTerminal%2F</url>
+    <content type="text"><![CDATA[卸载程序FluentTerminal虽然好看，但是最近的版本启动特别慢，卸载又找不到地方。 百度一波得到解决方法。 管理员身份打开powershell，输入 1Get-AppxPackage -AllUsers | Select Name, PackageFullName 得到结果后查找FluentTerminal 复制右边的全称，例如我的53621FSApps.FluentTerminal_0.7.1.0_x64__zzw7cgfsy6dd6 1Remove-AppxPackage 53621FSApps.FluentTerminal_0.7.1.0_x64__zzw7cgfsy6dd6 即可。 删除注册表因为我添加了右键的注册表（参考这个 清除注册表 123reg delete &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here&quot; &#x2F;freg delete &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here&quot; &#x2F;freg delete &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here&quot; &#x2F;f]]></content>
+      <categories>
+        <category>Other</category>
+      </categories>
+      <tags>
+        <tag>Other</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[资源库]]></title>
     <url>%2F2020%2F08%2F05%2F%E8%B5%84%E6%BA%90%E5%BA%93%2F</url>
-    <content type="text"><![CDATA[在线文本转语音 https://mtjmtj7.lanzous.com/icamefbsj2f 随机字符生成器 https://mtjmtj7.lanzous.com/irPVDfbsj4h VIP视频解析 https://mtjmtj7.lanzous.com/iN6mifbsj5i]]></content>
+    <content type="text"><![CDATA[在线文本转语音 https://mtjmtj7.lanzous.com/icamefbsj2f 随机字符生成器 https://mtjmtj7.lanzous.com/irPVDfbsj4h VIP视频解析 https://mtjmtj7.lanzous.com/iN6mifbsj5i python-docx https://mtjmtj7.lanzous.com/i2C77fclide opencv_python-4.3.0.36-cp36-cp36m-win_amd64 http://pan-yz.chaoxing.com/share/info/82c3aa0e17d78c2d picgo 2.3.0_beta https://lanzous.com/ichi77g]]></content>
       <categories>
         <category>Other</category>
       </categories>
@@ -69,7 +80,7 @@
   <entry>
     <title><![CDATA[奇怪的操作]]></title>
     <url>%2F2020%2F04%2F18%2F%E5%A5%87%E6%80%AA%E7%9A%84%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[添加、删除注册表添加鼠标右键菜单新建文本，将以下脚本复制到文本中，另存为Install.bat，双击打开Install.bat即可12345reg add &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%1\&quot;&quot; /freg add &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /freg add &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here\command&quot; /d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; /f 删除鼠标右键菜单操作同上，另存为Uninstall.bat，命令如下： 1234reg delete &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here&quot; /freg delete &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here&quot; /f 其中 Open Fluent Terminal here 是右键显示文字，如果出现中文乱码，regedit 打开注册表编辑器 ，复制路径修改即可。 判断一个数是否是2的整数次幂如果一个数是2的n次幂，二进制中只有一个1，并且1后面跟了n个0； 因此问题可以转化为判断1后面是否跟了n个0就可以了。 把减去1后会发现，后面的0全变为1；因此将原来的数与去减去1后的数字进行与运算后会发现为零。 (number &amp; number - 1) == 0]]></content>
+    <content type="text"><![CDATA[添加、删除注册表添加鼠标右键菜单新建文本，将以下脚本复制到文本中，另存为Install.bat，双击打开Install.bat即可 12345reg add &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here\command&quot; &#x2F;d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%1\&quot;&quot; &#x2F;freg add &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here\command&quot; &#x2F;d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; &#x2F;freg add &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here\command&quot; &#x2F;d &quot;\&quot;%LOCALAPPDATA%\Microsoft\WindowsApps\flute.exe\&quot; new \&quot;%%V\&quot;&quot; &#x2F;f 删除鼠标右键菜单操作同上，另存为Uninstall.bat，命令如下： 1234reg delete &quot;HKCU\Software\Classes\Directory\shell\Open Fluent Terminal here&quot; &#x2F;freg delete &quot;HKCU\Software\Classes\Directory\Background\shell\Open Fluent Terminal here&quot; &#x2F;freg delete &quot;HKCU\Software\Classes\LibraryFolder\Background\shell\Open Fluent Terminal here&quot; &#x2F;f 其中 Open Fluent Terminal here 是右键显示文字，如果出现中文乱码，regedit 打开注册表编辑器 ，复制路径修改即可。 判断一个数是否是2的整数次幂如果一个数是2的n次幂，二进制中只有一个1，并且1后面跟了n个0； 因此问题可以转化为判断1后面是否跟了n个0就可以了。 把减去1后会发现，后面的0全变为1；因此将原来的数与去减去1后的数字进行与运算后会发现为零。 (number &amp; number - 1) == 0 python字符串去除转义字符123456remap &#x3D; &#123; ord(&#39;\t&#39;): &#39;&#39;, ord(&#39;\f&#39;): &#39;&#39;, ord(&#39;\r&#39;): None &#125; s.translate(remap) python自动生成当前项目的requirements文件]]></content>
       <categories>
         <category>Other</category>
       </categories>
