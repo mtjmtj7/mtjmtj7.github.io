@@ -12,69 +12,58 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[资源库]]></title>
-    <url>%2F2020%2F08%2F05%2F%E8%B5%84%E6%BA%90%E5%BA%93%2F</url>
-    <content type="text"><![CDATA[在线文本转语音 https://mtjmtj7.lanzous.com/icamefbsj2f 随机字符生成器 https://mtjmtj7.lanzous.com/irPVDfbsj4h VIP视频解析 https://mtjmtj7.lanzous.com/iN6mifbsj5i python-docx https://mtjmtj7.lanzous.com/i2C77fclide opencv_python-4.3.0.36-cp36-cp36m-win_amd64 链接: http://caiyun.feixin.10086.cn/dl/1A5Ch5mSzNen6 提取码:ONP3 picgo 2.3.0_beta https://lanzous.com/ichi77g]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[P1317-低洼地]]></title>
     <url>%2F2020%2F04%2F24%2FP1317-%E4%BD%8E%E6%B4%BC%E5%9C%B0%2F</url>
-    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1317 数据保证了首尾都是0 ，所以在开始下降时设置标记位，开始上升时标记结束。 123456789101112131415161718192021222324252627#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; cin&gt;&gt;n; int l=0, a=0, b; int cnt = 0; for(int i=1; i&lt;=n; i++) &#123; cin&gt;&gt;b; if(b &lt; a) &#123; //开始下降 l=1; &#125; if(b&gt;a &amp;&amp; l==1) &#123; //一个区间 l=0; cnt++; &#125; a = b; &#125; cout&lt;&lt;cnt; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1317 数据保证了首尾都是0 ，所以在开始下降时设置标记位，开始上升时标记结束。 123456789101112131415161718192021222324252627#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&#123; int n; cin&gt;&gt;n; int l&#x3D;0, a&#x3D;0, b; int cnt &#x3D; 0; for(int i&#x3D;1; i&lt;&#x3D;n; i++) &#123; cin&gt;&gt;b; if(b &lt; a) &#123; &#x2F;&#x2F;开始下降 l&#x3D;1; &#125; if(b&gt;a &amp;&amp; l&#x3D;&#x3D;1) &#123; &#x2F;&#x2F;一个区间 l&#x3D;0; cnt++; &#125; a &#x3D; b; &#125; cout&lt;&lt;cnt; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[P1150-Peter的烟]]></title>
     <url>%2F2020%2F04%2F20%2FP1150-Peter%E7%9A%84%E7%83%9F%2F</url>
-    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1150题目描述Peter 有 nn 根烟，他每吸完一根烟就把烟蒂保存起来，k(k&gt;1)k(k&gt;1)个烟蒂可以换一个新的烟，那么 Peter 最终能吸到多少根烟呢？输入格式每组测试数据一行包括两个整数 n, kn,k（1 &lt; n, k \le 10^81&lt;n,k≤108）。 输出格式对于每组测试数据，输出一行包括一个整数表示最终烟的根数。 输入输出样例输入 #1复制 14 3 输出 #1复制 15 输入 #2复制 110 3 输出 #2复制 114 说明/提示对于 100%100% 的数据，1&lt;n, k \le 10^81&lt;n,k≤108。 123456789101112131415161718192021222324#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n,k; cin&gt;&gt;n&gt;&gt;k; int xi = 0; int sum = 0; while(n&gt;0) &#123; xi++; //吸一根，用于兑换计数 sum++; //吸一根 n--; //少一根 if(xi==k) //够数了 &#123; n++; //换一根 xi=0; //计数器重置 &#125; &#125; cout&lt;&lt;sum; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1150 题目描述Peter 有 nn 根烟，他每吸完一根烟就把烟蒂保存起来，k(k&gt;1)k(k&gt;1)个烟蒂可以换一个新的烟，那么 Peter 最终能吸到多少根烟呢？ 输入格式每组测试数据一行包括两个整数 n, kn,k（1 &lt; n, k \le 10^81&lt;n,k≤108）。 输出格式对于每组测试数据，输出一行包括一个整数表示最终烟的根数。 输入输出样例输入 #1复制 14 3 输出 #1复制 15 输入 #2复制 110 3 输出 #2复制 114 说明/提示对于 100%100% 的数据，1&lt;n, k \le 10^81&lt;n,k≤108。 123456789101112131415161718192021222324#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&#123; int n,k; cin&gt;&gt;n&gt;&gt;k; int xi &#x3D; 0; int sum &#x3D; 0; while(n&gt;0) &#123; xi++; &#x2F;&#x2F;吸一根，用于兑换计数 sum++; &#x2F;&#x2F;吸一根 n--; &#x2F;&#x2F;少一根 if(xi&#x3D;&#x3D;k) &#x2F;&#x2F;够数了 &#123; n++; &#x2F;&#x2F;换一根 xi&#x3D;0; &#x2F;&#x2F;计数器重置 &#125; &#125; cout&lt;&lt;sum; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[P1146-翻转硬币]]></title>
     <url>%2F2020%2F04%2F20%2FP1146-%E7%BF%BB%E8%BD%AC%E7%A1%AC%E5%B8%81%2F</url>
-    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1146题目描述在桌面上有一排硬币，共NN枚，每一枚硬币均为正面朝上。现在要把所有的硬币翻转成反面朝上，规则是每次可翻转任意N-1N−1枚硬币（正面向上的被翻转为反面向上，反之亦然）。求一个最短的操作序列（将每次翻转N-1枚硬币成为一次操作）。 输入格式一个自然数NN（NN为不大于100100的偶数）。 输出格式第一行包含一个整数SS，表示最少需要的操作次数。接下来的SS行每行分别表示每次操作后桌上硬币的状态（一行包含NN个整数（00或11），表示每个硬币的状态：00――正面向上，和11――反面向上，不允许出现多余空格）。 对于有多种操作方案的情况，则只需操作的字典序最小输出一种。 注：操作的字典序：对于一次操作，1表示翻转，0表示不反转。 但是需要你输出的是每一次操作完的状态，0表示正面朝上，1表示反面朝上。 输入输出样例输入 #1 14 输出 #1 1234540111110000011111 https://blog.csdn.net/qq_40170282/article/details/83305244 思路：第i次翻转第i个不改变，其他翻转]]></content>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1146 题目描述在桌面上有一排硬币，共NN枚，每一枚硬币均为正面朝上。现在要把所有的硬币翻转成反面朝上，规则是每次可翻转任意N-1N−1枚硬币（正面向上的被翻转为反面向上，反之亦然）。求一个最短的操作序列（将每次翻转N-1枚硬币成为一次操作）。 输入格式一个自然数NN（NN为不大于100100的偶数）。 输出格式第一行包含一个整数SS，表示最少需要的操作次数。接下来的SS行每行分别表示每次操作后桌上硬币的状态（一行包含NN个整数（00或11），表示每个硬币的状态：00――正面向上，和11――反面向上，不允许出现多余空格）。 对于有多种操作方案的情况，则只需操作的字典序最小输出一种。 注：操作的字典序：对于一次操作，1表示翻转，0表示不反转。 但是需要你输出的是每一次操作完的状态，0表示正面朝上，1表示反面朝上。 输入输出样例输入 #1 14 输出 #1 1234540111110000011111 https://blog.csdn.net/qq_40170282/article/details/83305244 思路：第i次翻转第i个不改变，其他翻转]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[P1116-车厢重组]]></title>
     <url>%2F2020%2F04%2F20%2FP1116-%E8%BD%A6%E5%8E%A2%E9%87%8D%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1116题目描述在一个旧式的火车站旁边有一座桥，其桥面可以绕河中心的桥墩水平旋转。一个车站的职工发现桥的长度最多能容纳两节车厢，如果将桥旋转180180度，则可以把相邻两节车厢的位置交换，用这种方法可以重新排列车厢的顺序。于是他就负责用这座桥将进站的车厢按车厢号从小到大排列。他退休后，火车站决定将这一工作自动化，其中一项重要的工作是编一个程序，输入初始的车厢顺序，计算最少用多少步就能将车厢排序。 输入格式共两行。 第一行是车厢总数N( \le 10000)N(≤10000)。 第二行是NN个不同的数表示初始的车厢顺序。 输出格式一个整数，最少的旋转次数。 输入输出样例输入 #1 1244 3 2 1 输出 #1 16 说明/提示求逆序数 1234567891011121314151617181920#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; int a[10005]; cin&gt;&gt;n; for(int i=0;i&lt;n;i++) cin&gt;&gt;a[i]; int sum=0; for(int i=0; i&lt;n; i++) &#123; for(int j=i; j&lt;n; j++) &#123; if(a[j]&lt;a[i]) sum++; &#125; &#125; cout&lt;&lt;sum; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1116 题目描述在一个旧式的火车站旁边有一座桥，其桥面可以绕河中心的桥墩水平旋转。一个车站的职工发现桥的长度最多能容纳两节车厢，如果将桥旋转180180度，则可以把相邻两节车厢的位置交换，用这种方法可以重新排列车厢的顺序。于是他就负责用这座桥将进站的车厢按车厢号从小到大排列。他退休后，火车站决定将这一工作自动化，其中一项重要的工作是编一个程序，输入初始的车厢顺序，计算最少用多少步就能将车厢排序。 输入格式共两行。 第一行是车厢总数N( \le 10000)N(≤10000)。 第二行是NN个不同的数表示初始的车厢顺序。 输出格式一个整数，最少的旋转次数。 输入输出样例输入 #1 1244 3 2 1 输出 #1 16 说明/提示求逆序数 1234567891011121314151617181920#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&#123; int n; int a[10005]; cin&gt;&gt;n; for(int i&#x3D;0;i&lt;n;i++) cin&gt;&gt;a[i]; int sum&#x3D;0; for(int i&#x3D;0; i&lt;n; i++) &#123; for(int j&#x3D;i; j&lt;n; j++) &#123; if(a[j]&lt;a[i]) sum++; &#125; &#125; cout&lt;&lt;sum; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[P1075-质因数分解]]></title>
     <url>%2F2020%2F04%2F20%2FP1075-%E8%B4%A8%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1075题目描述已知正整数nn是两个不同的质数的乘积，试求出两者中较大的那个质数。输入格式一个正整数nn。输出格式一个正整数pp，即较大的那个质数。输入输出样例输入 #1复制121输出 #1复制17说明/提示n&lt;=2×10的9次方 NOIP 2012 普及组 第一题 题目已知 n是两个质因数乘积，所以从2开始计算（此处不用判断i是否为质数，i肯定不是合数。 当n%i==0时，i最小 n/i最大 12345678910111213141516#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; long long int n,i; cin&gt;&gt;n; for(i=2; i&lt;n; i++) &#123; if(n%i==0) &#123; cout&lt;&lt;n/i; break; &#125; &#125; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://www.luogu.com.cn/problem/P1075 题目描述已知正整数nn是两个不同的质数的乘积，试求出两者中较大的那个质数。 输入格式一个正整数nn。 输出格式一个正整数pp，即较大的那个质数。 输入输出样例输入 #1复制 121 输出 #1复制 17 说明/提示n&lt;=2×10的9次方 NOIP 2012 普及组 第一题 题目已知 n是两个质因数乘积，所以从2开始计算（此处不用判断i是否为质数，i肯定不是合数。 当n%i==0时，i最小 n/i最大 12345678910111213141516#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&#123; long long int n,i; cin&gt;&gt;n; for(i&#x3D;2; i&lt;n; i++) &#123; if(n%i&#x3D;&#x3D;0) &#123; cout&lt;&lt;n&#x2F;i; break; &#125; &#125; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -91,7 +80,7 @@
   <entry>
     <title><![CDATA[Java正则表达式匹配中文]]></title>
     <url>%2F2020%2F04%2F12%2FJava%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E4%B8%AD%E6%96%87%2F</url>
-    <content type="text"><![CDATA[提取中文12345678String regEx = &quot;[\\u4e00-\\u9fa5]&quot;;Pattern pattern = Pattern.compile(regEx);Matcher matcher = pattern.matcher(str);String titltTmp = &quot;&quot;;while (matcher.find())&#123; titltTmp += matcher.group();&#125;first.setTitle(titltTmp); 提取数字 12String result = Pattern.compile(&quot;[^0-9]&quot;).matcher(su).replaceAll(&quot;&quot;).trim();int su1=Integer.valueOf(result);]]></content>
+    <content type="text"><![CDATA[提取中文 12345678String regEx &#x3D; &quot;[\\u4e00-\\u9fa5]&quot;;Pattern pattern &#x3D; Pattern.compile(regEx);Matcher matcher &#x3D; pattern.matcher(str);String titltTmp &#x3D; &quot;&quot;;while (matcher.find())&#123; titltTmp +&#x3D; matcher.group();&#125;first.setTitle(titltTmp); 提取数字 12String result &#x3D; Pattern.compile(&quot;[^0-9]&quot;).matcher(su).replaceAll(&quot;&quot;).trim();int su1&#x3D;Integer.valueOf(result);]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -102,7 +91,7 @@
   <entry>
     <title><![CDATA[layui upload后台接收不到参数]]></title>
     <url>%2F2020%2F04%2F08%2Flayui-upload%E5%90%8E%E5%8F%B0%E6%8E%A5%E6%94%B6%E4%B8%8D%E5%88%B0%E5%8F%82%E6%95%B0%2F</url>
-    <content type="text"><![CDATA[在使用官网upload组件上传文件时，data为可附带上传参数。 明明之前都可以…现在玄学bug 解决： 在before参数中： 1234before: function(obj)&#123; layer.load(); //上传loading this.data=&#123;&apos;xxx&apos;:&apos;xxx&apos;&#125;;&#125;]]></content>
+    <content type="text"><![CDATA[在使用官网upload组件上传文件时，data为可附带上传参数。 明明之前都可以…现在玄学bug 解决： 在before参数中： 1234before: function(obj)&#123; layer.load(); &#x2F;&#x2F;上传loading this.data&#x3D;&#123;&#39;xxx&#39;:&#39;xxx&#39;&#125;;&#125;]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -124,20 +113,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[资源站解析接口]]></title>
-    <url>%2F2020%2F03%2F28%2F%E8%B5%84%E6%BA%90%E7%AB%99%E8%A7%A3%E6%9E%90%E6%8E%A5%E5%8F%A3%2F</url>
-    <content type="text"><![CDATA[OK资源网 http://www.okzyw.com/help/#JSONAPI 返回的json，简单易懂，强推JSON API接口详情 【API接口说明】采集地址：https://api.okzy.tv/api.php/provide/vod/at/json/视频列表地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=list&amp;wd=视频详情地址：https://api.okzy.tv/api.php/provide/vod/at/json/?ac=detail&amp;ids= 解析口传入url可以直接在线播放 DP播放器解析接口： https://www.dplayer.tv/dp/?url=CK播放器解析接口： https://www.dplayer.tv/?url= 通用采集接口，备用。采集通用备用接口： https://api.okzy.tv/api.php/provide/vod/at/xml/ 麻花资源网 http://mahuazy.net/help/#SeaCms 查询接口https://mhapi123.com/inc/ldg_api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/api_all.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/ldg_api_kuyun.php?ac=list&amp;wd= 返回xml https://www.mhapi123.com/inc/feifei3_all/?ac=list&amp;wd= 返回json，同ok资源网 以上仅限查询结果，具体详情接口未完待续。 卧龙资源网http://vodsee.com/help 查询接口返回json，参数同ok资源网 https://cj.wlzy.tv/api/provide/vod/?ac=list&amp;wd= 返回json https://cj.wlzy.tv/api/macs/vod/?ac=list&amp;wd= 返回json 详情接口https://cj.wlzy.tv/api/provide/vod/?ac=detail&amp;ids=349519 返回json https://cj.wlzy.tv/api/macs/vod/?ac=detail&amp;ids=349519 返回json]]></content>
-      <categories>
-        <category>Other</category>
-      </categories>
-      <tags>
-        <tag>Other</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[GUI多线程进度条]]></title>
     <url>%2F2019%2F10%2F06%2FGUI%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%BF%9B%E5%BA%A6%E6%9D%A1%2F</url>
-    <content type="text"><![CDATA[在这里做个备忘…每次找起来好麻烦 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107import java.awt.BorderLayout;import java.awt.EventQueue;import javax.swing.JFrame;import javax.swing.JOptionPane;import javax.swing.JPanel;import javax.swing.border.EmptyBorder;import javax.swing.JButton;import java.awt.event.ActionListener;import java.awt.event.ActionEvent;import javax.swing.JProgressBar;public class GUIThd extends JFrame &#123; private JPanel contentPane; public JButton btnNewButton; public JProgressBar progressBar; public JButton btnNewButton_1; /** * Launch the application. */ public static void main(String[] args) &#123; EventQueue.invokeLater(new Runnable() &#123; public void run() &#123; try &#123; GUIThd frame = new GUIThd(); frame.setVisible(true); &#125; catch (Exception e) &#123; e.printStackTrace(); &#125; &#125; &#125;); &#125; /** * Create the frame. */ public GUIThd() &#123; setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); setBounds(100, 100, 736, 535); contentPane = new JPanel(); contentPane.setBorder(new EmptyBorder(5, 5, 5, 5)); setContentPane(contentPane); contentPane.setLayout(null); btnNewButton = new JButton("New button"); btnNewButton.addActionListener(new BtnNewButtonActionListener()); btnNewButton.setBounds(90, 242, 256, 42); contentPane.add(btnNewButton); progressBar = new JProgressBar(); progressBar.setBounds(90, 152, 409, 14); contentPane.add(progressBar); btnNewButton_1 = new JButton("New button"); btnNewButton_1.addActionListener(new BtnNewButton_1ActionListener()); btnNewButton_1.setBounds(207, 386, 93, 23); contentPane.add(btnNewButton_1); &#125; private class BtnNewButton_1ActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent arg0) &#123; JOptionPane msg=new JOptionPane(); msg.showMessageDialog(null, progressBar.getValue()); &#125; &#125; private class BtnNewButtonActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent arg0) &#123; //多任务指：每次for循环中的代码就是一个任务，每个任务放入一个线程中。 //若是把整个for循环放入一个线程，多任务就体现不出来了。 for (int i = 0; i &lt; 100; i++) &#123; new proThd("任务:"+i).start();; &#125; &#125; &#125; public synchronized void setProValue()&#123; int curr=progressBar.getValue(); curr++; progressBar.setValue(curr); &#125; class proThd extends Thread&#123; String sName; public proThd(String name) &#123; sName=name; &#125; public void run() &#123; int irnd=(int)(Math.random()*300); try &#123; Thread.sleep(irnd); setProValue(); System.out.println(this.sName); &#125; catch (InterruptedException e) &#123; // TODO Auto-generated catch block e.printStackTrace(); &#125; &#125; &#125; &#125;]]></content>
+    <content type="text"><![CDATA[在这里做个备忘…每次找起来好麻烦 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108import java.awt.BorderLayout;import java.awt.EventQueue;import javax.swing.JFrame;import javax.swing.JOptionPane;import javax.swing.JPanel;import javax.swing.border.EmptyBorder;import javax.swing.JButton;import java.awt.event.ActionListener;import java.awt.event.ActionEvent;import javax.swing.JProgressBar;public class GUIThd extends JFrame &#123; private JPanel contentPane; public JButton btnNewButton; public JProgressBar progressBar; public JButton btnNewButton_1; /** * Launch the application. */ public static void main(String[] args) &#123; EventQueue.invokeLater(new Runnable() &#123; public void run() &#123; try &#123; GUIThd frame = new GUIThd(); frame.setVisible(true); &#125; catch (Exception e) &#123; e.printStackTrace(); &#125; &#125; &#125;); &#125; /** * Create the frame. */ public GUIThd() &#123; setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); setBounds(100, 100, 736, 535); contentPane = new JPanel(); contentPane.setBorder(new EmptyBorder(5, 5, 5, 5)); setContentPane(contentPane); contentPane.setLayout(null); btnNewButton = new JButton(&quot;New button&quot;); btnNewButton.addActionListener(new BtnNewButtonActionListener()); btnNewButton.setBounds(90, 242, 256, 42); contentPane.add(btnNewButton); progressBar = new JProgressBar(); progressBar.setBounds(90, 152, 409, 14); contentPane.add(progressBar); btnNewButton_1 = new JButton(&quot;New button&quot;); btnNewButton_1.addActionListener(new BtnNewButton_1ActionListener()); btnNewButton_1.setBounds(207, 386, 93, 23); contentPane.add(btnNewButton_1); &#125; private class BtnNewButton_1ActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent arg0) &#123; JOptionPane msg=new JOptionPane(); msg.showMessageDialog(null, progressBar.getValue()); &#125; &#125; private class BtnNewButtonActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent arg0) &#123; //多任务指：每次for循环中的代码就是一个任务，每个任务放入一个线程中。 //若是把整个for循环放入一个线程，多任务就体现不出来了。 for (int i = 0; i &lt; 100; i++) &#123; new proThd(&quot;任务:&quot;+i).start();; &#125; &#125; &#125; public synchronized void setProValue()&#123; int curr=progressBar.getValue(); curr++; progressBar.setValue(curr); &#125; class proThd extends Thread&#123; String sName; public proThd(String name) &#123; sName=name; &#125; public void run() &#123; int irnd=(int)(Math.random()*300); try &#123; Thread.sleep(irnd); setProValue(); System.out.println(this.sName); &#125; catch (InterruptedException e) &#123; // TODO Auto-generated catch block e.printStackTrace(); &#125; &#125; &#125; &#125;]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -148,13 +126,12 @@
   <entry>
     <title><![CDATA[Vijos的训练计划-p1316]]></title>
     <url>%2F2019%2F10%2F05%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1316%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1316 排序去重。 代码123456789101112131415161718192021222324#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; int a[105]; cin&gt;&gt;n; for(int i=0;i&lt;n;i++) cin&gt;&gt;a[i]; sort(a,a+n); int cnt = 0; int b[105]; for(int i=0;i&lt;n;i++) &#123; if(a[i]!=a[i+1]) &#123; b[cnt++]=a[i]; &#125; &#125; cout&lt;&lt;cnt&lt;&lt;endl; for(int i=0;i&lt;cnt;i++) cout&lt;&lt;b[i]&lt;&lt;&quot; &quot;; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1316 排序去重。 代码123456789101112131415161718192021222324#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&#123; int n; int a[105]; cin&gt;&gt;n; for(int i&#x3D;0;i&lt;n;i++) cin&gt;&gt;a[i]; sort(a,a+n); int cnt &#x3D; 0; int b[105]; for(int i&#x3D;0;i&lt;n;i++) &#123; if(a[i]!&#x3D;a[i+1]) &#123; b[cnt++]&#x3D;a[i]; &#125; &#125; cout&lt;&lt;cnt&lt;&lt;endl; for(int i&#x3D;0;i&lt;cnt;i++) cout&lt;&lt;b[i]&lt;&lt;&quot; &quot;; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -165,8 +142,7 @@
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -177,38 +153,35 @@
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Vijos的训练计划-p1123]]></title>
     <url>%2F2019%2F10%2F03%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1123%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1123dalao的题解： 从左向右遍历,试想1 1 7三个数,我们要做的就是将7移向第二个1中4然后再由加4变成的5给第一个1一个2最后都成为3,我们会发现,如果这个题从左向右思考的话,就是第一个1为了变成3,需要从第二个数借2,然而第二个数不足2,但是我们没有必要再从7借,因为反向思维我们可以从7直接借给第二个数很大的一个数,所以我们选择透支第二个数,即从第二个数中借2给第一个数然后变成-1,再从7中给-1还. 代码(纯手打 1234567891011121314151617181920212223242526#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; cin&gt;&gt;n; int a[105]; int sum = 0; for(int i=0; i&lt;n; i++) &#123; cin&gt;&gt;a[i]; sum += a[i]; &#125; int avg = sum / n; int cnt = 0; for(int i=0; i&lt;n; i++) &#123; if(a[i] != avg) &#123; a[i+1] += a[i]-avg; cnt++; &#125; &#125; cout&lt;&lt;cnt; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1123dalao的题解： 从左向右遍历,试想1 1 7三个数,我们要做的就是将7移向第二个1中4然后再由加4变成的5给第一个1一个2最后都成为3,我们会发现,如果这个题从左向右思考的话,就是第一个1为了变成3,需要从第二个数借2,然而第二个数不足2,但是我们没有必要再从7借,因为反向思维我们可以从7直接借给第二个数很大的一个数,所以我们选择透支第二个数,即从第二个数中借2给第一个数然后变成-1,再从7中给-1还. 代码(纯手打 1234567891011121314151617181920212223242526#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&#123; int n; cin&gt;&gt;n; int a[105]; int sum &#x3D; 0; for(int i&#x3D;0; i&lt;n; i++) &#123; cin&gt;&gt;a[i]; sum +&#x3D; a[i]; &#125; int avg &#x3D; sum &#x2F; n; int cnt &#x3D; 0; for(int i&#x3D;0; i&lt;n; i++) &#123; if(a[i] !&#x3D; avg) &#123; a[i+1] +&#x3D; a[i]-avg; cnt++; &#125; &#125; cout&lt;&lt;cnt; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Vijos的训练计划-p1691]]></title>
     <url>%2F2019%2F10%2F02%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1691%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1691只能横着放只考虑纵坐标。排序后取中位数，再计算各个距离即可。 代码12345678910111213141516171819#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; int a[10005]; int x; int cnt = 0; scanf("%d",&amp;n); for(int i=0;i&lt;n;i++) scanf("%d %d",&amp;x,&amp;a[i]); sort(a,a+n); int mid = a[n/2]; int sum = 0; for(int i=0; i&lt;n; i++) sum += abs(mid-a[i]); printf("%d\n",sum); return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1691只能横着放只考虑纵坐标。排序后取中位数，再计算各个距离即可。 代码12345678910111213141516171819#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; int n; int a[10005]; int x; int cnt = 0; scanf(&quot;%d&quot;,&amp;n); for(int i=0;i&lt;n;i++) scanf(&quot;%d %d&quot;,&amp;x,&amp;a[i]); sort(a,a+n); int mid = a[n/2]; int sum = 0; for(int i=0; i&lt;n; i++) sum += abs(mid-a[i]); printf(&quot;%d\n&quot;,sum); return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[xpath图片下载器]]></title>
     <url>%2F2019%2F10%2F01%2Fxpath%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD%E5%99%A8%2F</url>
-    <content type="text"><![CDATA[需求分析想要使用微博的狗头，但是一打开看到这么多表情所以 打开Chrome，登陆微博，打开Xpath。一顿操作猛如虎搞到所有表情链接（xpath代码：//li[@action-type=&quot;select&quot;]/img/@src）使用Python还要模拟登陆这里不做展示（因为不会 为了以后方便实用所以打算用Java做成GUI 界面如下↓： 需求 复制得到的链接是 n行的，处理换行符 以原有文件名保存文件，使用正则表达式分割链接 选择文件夹，下载文件 多线程下载加快下载速度 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151package xpath_img_downloader;import java.awt.BorderLayout;import java.awt.EventQueue;import javax.swing.JFrame;import javax.swing.JPanel;import javax.swing.border.EmptyBorder;import javax.swing.JTextArea;import javax.swing.JButton;import javax.swing.JFileChooser;import javax.swing.JTextField;import javax.swing.JLabel;import javax.swing.JOptionPane;import java.awt.event.ActionListener;import java.io.ByteArrayOutputStream;import java.io.DataInputStream;import java.io.File;import java.io.FileOutputStream;import java.io.IOException;import java.net.MalformedURLException;import java.net.URL;import java.util.UUID;import java.awt.event.ActionEvent;public class Client extends JFrame &#123; private JPanel contentPane; public JTextArea textArea; public JButton button; public JButton button_1; String filepath; /** * Launch the application. */ public static void main(String[] args) &#123; EventQueue.invokeLater(new Runnable() &#123; public void run() &#123; try &#123; Client frame = new Client(); frame.setVisible(true); &#125; catch (Exception e) &#123; e.printStackTrace(); &#125; &#125; &#125;); &#125; /** * Create the frame. */ public Client() &#123; setTitle(&quot;xpath图片下载器_mtjmtj7&quot;); setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); setBounds(100, 100, 549, 401); contentPane = new JPanel(); contentPane.setBorder(new EmptyBorder(5, 5, 5, 5)); setContentPane(contentPane); contentPane.setLayout(null); textArea = new JTextArea(); textArea.setBounds(10, 10, 513, 271); contentPane.add(textArea); button = new JButton(&quot;选择文件夹&quot;); button.addActionListener(new ButtonActionListener()); button.setBounds(10, 311, 243, 41); contentPane.add(button); button_1 = new JButton(&quot;下载&quot;); button_1.addActionListener(new Button_1ActionListener()); button_1.setBounds(280, 311, 243, 41); contentPane.add(button_1); &#125; //下载 private class Button_1ActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent e) &#123; String urls = textArea.getText(); String urlArray[] = urls.split(&quot;[\\n]&quot;); String path = filepath; if(path == null) &#123; JOptionPane.showMessageDialog(contentPane, &quot;请先选择文件夹！&quot;); &#125; else &#123; for (int i = 0; i &lt; urlArray.length; i++) &#123; String a[] = urlArray[i].split(&quot;[/]&quot;);// downloader(urlArray[i], path, a[a.length-1]); new downloaderThread(urlArray[i], path, a[a.length-1]).start(); &#125; &#125; &#125; &#125; //选择文件夹 private class ButtonActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent e) &#123; JFileChooser jChooser = new JFileChooser(); jChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY); int res = jChooser.showSaveDialog(contentPane); if(res == JFileChooser.APPROVE_OPTION)&#123; filepath = jChooser.getSelectedFile().getAbsolutePath(); &#125; &#125; &#125; //下载器 public void downloader (String link, String path, String filename) &#123; URL url = null; try &#123; url = new URL(&quot;http:&quot; + link); DataInputStream dataInputStream = new DataInputStream(url.openStream()); File file = new File(path); if(!file.exists())&#123; file.mkdir(); &#125; File f = new File(path+&quot;/&quot;+filename); FileOutputStream fileOutputStream = new FileOutputStream(f); ByteArrayOutputStream output = new ByteArrayOutputStream(); byte[] buffer = new byte[1024]; int length; while ((length = dataInputStream.read(buffer)) &gt; 0) &#123; output.write(buffer, 0, length); &#125; fileOutputStream.write(output.toByteArray()); dataInputStream.close(); fileOutputStream.close(); &#125; catch (MalformedURLException e) &#123; e.printStackTrace(); &#125; catch (IOException e) &#123; e.printStackTrace(); &#125; &#125; class downloaderThread extends Thread&#123; String link; String path; String filename; public downloaderThread(String link, String path, String filename) &#123; super(); this.link = link; this.path = path; this.filename = filename; &#125; @Override public void run() &#123; downloader(link, path, filename); &#125; &#125;&#125;]]></content>
+    <content type="text"><![CDATA[需求分析想要使用微博的狗头，但是一打开看到这么多表情所以 打开Chrome，登陆微博，打开Xpath。 一顿操作猛如虎搞到所有表情链接（xpath代码：//li[@action-type=&quot;select&quot;]/img/@src） 使用Python还要模拟登陆这里不做展示（因为不会 为了以后方便实用所以打算用Java做成GUI 界面如下↓： 需求 复制得到的链接是 n行的，处理换行符 以原有文件名保存文件，使用正则表达式分割链接 选择文件夹，下载文件 多线程下载加快下载速度 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152package xpath_img_downloader;import java.awt.BorderLayout;import java.awt.EventQueue;import javax.swing.JFrame;import javax.swing.JPanel;import javax.swing.border.EmptyBorder;import javax.swing.JTextArea;import javax.swing.JButton;import javax.swing.JFileChooser;import javax.swing.JTextField;import javax.swing.JLabel;import javax.swing.JOptionPane;import java.awt.event.ActionListener;import java.io.ByteArrayOutputStream;import java.io.DataInputStream;import java.io.File;import java.io.FileOutputStream;import java.io.IOException;import java.net.MalformedURLException;import java.net.URL;import java.util.UUID;import java.awt.event.ActionEvent;public class Client extends JFrame &#123; private JPanel contentPane; public JTextArea textArea; public JButton button; public JButton button_1; String filepath; &#x2F;** * Launch the application. *&#x2F; public static void main(String[] args) &#123; EventQueue.invokeLater(new Runnable() &#123; public void run() &#123; try &#123; Client frame &#x3D; new Client(); frame.setVisible(true); &#125; catch (Exception e) &#123; e.printStackTrace(); &#125; &#125; &#125;); &#125; &#x2F;** * Create the frame. *&#x2F; public Client() &#123; setTitle(&quot;xpath图片下载器_mtjmtj7&quot;); setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); setBounds(100, 100, 549, 401); contentPane &#x3D; new JPanel(); contentPane.setBorder(new EmptyBorder(5, 5, 5, 5)); setContentPane(contentPane); contentPane.setLayout(null); textArea &#x3D; new JTextArea(); textArea.setBounds(10, 10, 513, 271); contentPane.add(textArea); button &#x3D; new JButton(&quot;选择文件夹&quot;); button.addActionListener(new ButtonActionListener()); button.setBounds(10, 311, 243, 41); contentPane.add(button); button_1 &#x3D; new JButton(&quot;下载&quot;); button_1.addActionListener(new Button_1ActionListener()); button_1.setBounds(280, 311, 243, 41); contentPane.add(button_1); &#125; &#x2F;&#x2F;下载 private class Button_1ActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent e) &#123; String urls &#x3D; textArea.getText(); String urlArray[] &#x3D; urls.split(&quot;[\\n]&quot;); String path &#x3D; filepath; if(path &#x3D;&#x3D; null) &#123; JOptionPane.showMessageDialog(contentPane, &quot;请先选择文件夹！&quot;); &#125; else &#123; for (int i &#x3D; 0; i &lt; urlArray.length; i++) &#123; String a[] &#x3D; urlArray[i].split(&quot;[&#x2F;]&quot;);&#x2F;&#x2F; downloader(urlArray[i], path, a[a.length-1]); new downloaderThread(urlArray[i], path, a[a.length-1]).start(); &#125; &#125; &#125; &#125; &#x2F;&#x2F;选择文件夹 private class ButtonActionListener implements ActionListener &#123; public void actionPerformed(ActionEvent e) &#123; JFileChooser jChooser &#x3D; new JFileChooser(); jChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY); int res &#x3D; jChooser.showSaveDialog(contentPane); if(res &#x3D;&#x3D; JFileChooser.APPROVE_OPTION)&#123; filepath &#x3D; jChooser.getSelectedFile().getAbsolutePath(); &#125; &#125; &#125; &#x2F;&#x2F;下载器 public void downloader (String link, String path, String filename) &#123; URL url &#x3D; null; try &#123; url &#x3D; new URL(&quot;http:&quot; + link); DataInputStream dataInputStream &#x3D; new DataInputStream(url.openStream()); File file &#x3D; new File(path); if(!file.exists())&#123; file.mkdir(); &#125; File f &#x3D; new File(path+&quot;&#x2F;&quot;+filename); FileOutputStream fileOutputStream &#x3D; new FileOutputStream(f); ByteArrayOutputStream output &#x3D; new ByteArrayOutputStream(); byte[] buffer &#x3D; new byte[1024]; int length; while ((length &#x3D; dataInputStream.read(buffer)) &gt; 0) &#123; output.write(buffer, 0, length); &#125; fileOutputStream.write(output.toByteArray()); dataInputStream.close(); fileOutputStream.close(); &#125; catch (MalformedURLException e) &#123; e.printStackTrace(); &#125; catch (IOException e) &#123; e.printStackTrace(); &#125; &#125; class downloaderThread extends Thread&#123; String link; String path; String filename; public downloaderThread(String link, String path, String filename) &#123; super(); this.link &#x3D; link; this.path &#x3D; path; this.filename &#x3D; filename; &#125; @Override public void run() &#123; downloader(link, path, filename); &#125; &#125;&#125;]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -219,55 +192,51 @@
   <entry>
     <title><![CDATA[Vijos的训练计划-p1772]]></title>
     <url>%2F2019%2F09%2F30%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1772%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1772因为都是三位数，所以只需要判断100-999中 不包含0的数字。 我的思路是：取出来三个数的每一个数字，存到数组，排序，遍历， a[i]!=a[i+1] 并且a[0]!=0。 在遍历时只需要遍历100-999/3+1即可。 代码123456789101112131415161718192021222324252627282930313233#include&lt;bits/stdc++.h&gt;using namespace std;//判断数字交集 bool check(int a1, int a2, int a3)&#123; int n[10]; n[0] = a1%10; n[1]=a1/10%10;n[2]=a1/100%10; n[3] = a2%10; n[4]=a2/10%10;n[5]=a2/100%10; n[6] = a3%10; n[7]=a3/10%10;n[8]=a3/100%10; sort(n,n+9); int cnt = 0; for(int i=0;i&lt;9;i++) &#123; if(n[i] == n[i+1]) &#123; cnt++; break; &#125; &#125; if(cnt == 0 &amp;&amp; n[0] != 0) return true; else return false;&#125;int main()&#123; for(int i=100; i&lt;999/3+1; i++) &#123; if(check(i, i*2, i*3)) printf("%d %d %d\n",i, i*2, i*3); &#125; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1772因为都是三位数，所以只需要判断100-999中 不包含0的数字。 我的思路是：取出来三个数的每一个数字，存到数组，排序，遍历， a[i]!=a[i+1] 并且a[0]!=0。 在遍历时只需要遍历100-999/3+1即可。 代码123456789101112131415161718192021222324252627282930313233#include&lt;bits/stdc++.h&gt;using namespace std;//判断数字交集 bool check(int a1, int a2, int a3)&#123; int n[10]; n[0] = a1%10; n[1]=a1/10%10;n[2]=a1/100%10; n[3] = a2%10; n[4]=a2/10%10;n[5]=a2/100%10; n[6] = a3%10; n[7]=a3/10%10;n[8]=a3/100%10; sort(n,n+9); int cnt = 0; for(int i=0;i&lt;9;i++) &#123; if(n[i] == n[i+1]) &#123; cnt++; break; &#125; &#125; if(cnt == 0 &amp;&amp; n[0] != 0) return true; else return false;&#125;int main()&#123; for(int i=100; i&lt;999/3+1; i++) &#123; if(check(i, i*2, i*3)) printf(&quot;%d %d %d\n&quot;,i, i*2, i*3); &#125; return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Vijos的训练计划-p1484]]></title>
     <url>%2F2019%2F09%2F29%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1484%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1484代码123456789101112131415161718192021222324252627282930313233343536373839404142#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; using namespace std;int change(char c)&#123; return c-48;&#125;int main()&#123; char a[13]; scanf("%s",a);// printf("%d",'1'-48); int end = a[12] - 48; int num = change(a[0])*1+change(a[2])*2+change(a[3])*3+change(a[4])*4+change(a[6])*5+change(a[7])*6+change(a[8])*7+change(a[9])*8+ change(a[10])*9; if(num%11 == 10) &#123; if(a[12] == 'X') printf("Right"); else &#123; for(int i=0;i&lt;12;i++) printf("%c",a[i]); printf("X"); &#125; &#125; else &#123; if(num % 11 == end) printf("Right"); else &#123; for(int i=0;i&lt;12;i++) printf("%c",a[i]); printf("%d",num%11); &#125; &#125; return 0; &#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1484代码123456789101112131415161718192021222324252627282930313233343536373839404142#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; using namespace std;int change(char c)&#123; return c-48;&#125;int main()&#123; char a[13]; scanf(&quot;%s&quot;,a);// printf(&quot;%d&quot;,&#x27;1&#x27;-48); int end = a[12] - 48; int num = change(a[0])*1+change(a[2])*2+change(a[3])*3+change(a[4])*4+change(a[6])*5+change(a[7])*6+change(a[8])*7+change(a[9])*8+ change(a[10])*9; if(num%11 == 10) &#123; if(a[12] == &#x27;X&#x27;) printf(&quot;Right&quot;); else &#123; for(int i=0;i&lt;12;i++) printf(&quot;%c&quot;,a[i]); printf(&quot;X&quot;); &#125; &#125; else &#123; if(num % 11 == end) printf(&quot;Right&quot;); else &#123; for(int i=0;i&lt;12;i++) printf(&quot;%c&quot;,a[i]); printf(&quot;%d&quot;,num%11); &#125; &#125; return 0; &#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Vijos的训练计划-p1911]]></title>
     <url>%2F2019%2F09%2F29%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1911%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1911a[]数字集，b[]结果集 验算a[i]+a[j] 把结果从b[]中消去（这里用-999 因为a[] b[]都是正整数。 代码123456789101112131415161718192021222324252627282930313233343536373839#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; using namespace std;int main()&#123; int n; scanf("%d",&amp;n); int a[105]; int b[105]; int cnt = 0; for(int i=0; i&lt;n; i++) &#123; scanf("%d",&amp;a[i]); b[i] = a[i]; &#125; sort(a,a+n); for(int i=0; i&lt;n; i++) &#123; for(int j=i+1; j&lt;n; j++) &#123; int tmp = a[i] + a[j]; for(int k=0; k&lt;n; k++) &#123; if(tmp == b[k]) &#123; cnt++; b[k] = -999; continue; &#125; &#125; &#125; &#125; printf("%d\n", cnt); return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1911a[]数字集，b[]结果集 验算a[i]+a[j] 把结果从b[]中消去（这里用-999 因为a[] b[]都是正整数。 代码123456789101112131415161718192021222324252627282930313233343536373839#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; using namespace std;int main()&#123; int n; scanf(&quot;%d&quot;,&amp;n); int a[105]; int b[105]; int cnt = 0; for(int i=0; i&lt;n; i++) &#123; scanf(&quot;%d&quot;,&amp;a[i]); b[i] = a[i]; &#125; sort(a,a+n); for(int i=0; i&lt;n; i++) &#123; for(int j=i+1; j&lt;n; j++) &#123; int tmp = a[i] + a[j]; for(int k=0; k&lt;n; k++) &#123; if(tmp == b[k]) &#123; cnt++; b[k] = -999; continue; &#125; &#125; &#125; &#125; printf(&quot;%d\n&quot;, cnt); return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Vijos的训练计划-p1848]]></title>
     <url>%2F2019%2F09%2F29%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1848%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1848代码123456789101112131415161718192021222324252627282930#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; int numCount(int num, int check)&#123; int cnt = 0; while(num) &#123; if(num % 10 == check) cnt++; num /= 10; &#125; return cnt;&#125;int main()&#123; int n,c; scanf("%d %d",&amp;n,&amp;c); int cnt = 0; for(int i=1;i&lt;=n;i++) &#123; cnt += numCount(i,c); &#125; printf("%d\n",cnt); return 0;&#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1848代码123456789101112131415161718192021222324252627282930#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;math.h&gt;#include&lt;algorithm&gt; int numCount(int num, int check)&#123; int cnt = 0; while(num) &#123; if(num % 10 == check) cnt++; num /= 10; &#125; return cnt;&#125;int main()&#123; int n,c; scanf(&quot;%d %d&quot;,&amp;n,&amp;c); int cnt = 0; for(int i=1;i&lt;=n;i++) &#123; cnt += numCount(i,c); &#125; printf(&quot;%d\n&quot;,cnt); return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[java上传文件到七牛云指定文件夹]]></title>
     <url>%2F2019%2F09%2F29%2Fjava%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0%E4%B8%83%E7%89%9B%E4%BA%91%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%2F</url>
-    <content type="text"><![CDATA[七牛云官方工具Kodo Browser上传很方便，但是上传后没法直接获取直链(虽然直链就是domain/文件名查阅官方文档后决定自己做一个简单的demo。 此时七牛云bucket为mtjmtj7. 新建一个文件夹用来存放图片。 Java端 官网demo如下（https://developer.qiniu.com/kodo/sdk/1239/java#server-upload） 1234567891011121314151617181920212223242526272829//构造一个带指定 Region 对象的配置类Configuration cfg = new Configuration(Region.region0());//...其他参数参考类注释UploadManager uploadManager = new UploadManager(cfg);//...生成上传凭证，然后准备上传String accessKey = "your access key";String secretKey = "your secret key";String bucket = "your bucket name";//如果是Windows情况下，格式是 D:\\qiniu\\test.pngString localFilePath = "/home/qiniu/test.png";//默认不指定key的情况下，以文件内容的hash值作为文件名String key = null;Auth auth = Auth.create(accessKey, secretKey);String upToken = auth.uploadToken(bucket);try &#123; Response response = uploadManager.put(localFilePath, key, upToken); //解析上传成功的结果 DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class); System.out.println(putRet.key); System.out.println(putRet.hash);&#125; catch (QiniuException ex) &#123; Response r = ex.response; System.err.println(r.toString()); try &#123; System.err.println(r.bodyString()); &#125; catch (QiniuException ex2) &#123; //ignore &#125;&#125; 在上面设置中，key值为文件名，这是我们可以设置为 images/filename ，images是指定的文件夹，filename是文件名。 上传成功后，返回domain/filename即是直链。]]></content>
+    <content type="text"><![CDATA[七牛云官方工具Kodo Browser上传很方便，但是上传后没法直接获取直链(虽然直链就是domain/文件名 查阅官方文档后决定自己做一个简单的demo。 此时七牛云bucket为mtjmtj7. 新建一个文件夹用来存放图片。 Java端 官网demo如下（https://developer.qiniu.com/kodo/sdk/1239/java#server-upload） 1234567891011121314151617181920212223242526272829//构造一个带指定 Region 对象的配置类Configuration cfg = new Configuration(Region.region0());//...其他参数参考类注释UploadManager uploadManager = new UploadManager(cfg);//...生成上传凭证，然后准备上传String accessKey = &quot;your access key&quot;;String secretKey = &quot;your secret key&quot;;String bucket = &quot;your bucket name&quot;;//如果是Windows情况下，格式是 D:\\qiniu\\test.pngString localFilePath = &quot;/home/qiniu/test.png&quot;;//默认不指定key的情况下，以文件内容的hash值作为文件名String key = null;Auth auth = Auth.create(accessKey, secretKey);String upToken = auth.uploadToken(bucket);try &#123; Response response = uploadManager.put(localFilePath, key, upToken); //解析上传成功的结果 DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class); System.out.println(putRet.key); System.out.println(putRet.hash);&#125; catch (QiniuException ex) &#123; Response r = ex.response; System.err.println(r.toString()); try &#123; System.err.println(r.bodyString()); &#125; catch (QiniuException ex2) &#123; //ignore &#125;&#125; 在上面设置中，key值为文件名，这是我们可以设置为 images/filename ，images是指定的文件夹，filename是文件名。 上传成功后，返回domain/filename即是直链。]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -278,29 +247,28 @@
   <entry>
     <title><![CDATA[Vijos的训练计划-p1001]]></title>
     <url>%2F2019%2F09%2F28%2FVijos%E7%9A%84%E8%AE%AD%E7%BB%83%E8%AE%A1%E5%88%92-p1001%2F</url>
-    <content type="text"><![CDATA[https://vijos.org/p/1001 123456789101112131415161718192021222324252627282930313233343536373839404142434445#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;algorithm&gt; struct student&#123; char name[20]; int cj1; int cj2; char a,b; int count;&#125;;int main()&#123; struct student xm[100]; int n,m,i; scanf("%d", &amp;m); for(i=0; i&lt;m; i++) scanf("%s %d %d %c %c %d", &amp;xm[i].name, &amp;xm[i].cj1, &amp;xm[i].cj2, &amp;xm[i].a, &amp;xm[i].b, &amp;xm[i].count); int max=0,allsum=0,sum; for(i=0; i&lt;m; i++) &#123; int sum=0; if(xm[i].cj1&gt;80 &amp;&amp; xm[i].count&gt;=1) sum+=8000; if(xm[i].cj1&gt;85 &amp;&amp; xm[i].cj2&gt;80) sum+=4000; if(xm[i].cj1&gt;90) sum+=2000; if(xm[i].cj1&gt;85 &amp;&amp; xm[i].b=='Y') sum+=1000; if(xm[i].cj2&gt;80 &amp;&amp; xm[i].a=='Y') sum+=850; allsum+=sum; if(max&lt;sum) &#123; max=sum; n=i; &#125; &#125; printf("%s\n%d\n%d\n",xm[n].name,max,allsum);&#125;]]></content>
+    <content type="text"><![CDATA[https://vijos.org/p/1001 123456789101112131415161718192021222324252627282930313233343536373839404142434445#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;algorithm&gt; struct student&#123; char name[20]; int cj1; int cj2; char a,b; int count;&#125;;int main()&#123; struct student xm[100]; int n,m,i; scanf(&quot;%d&quot;, &amp;m); for(i=0; i&lt;m; i++) scanf(&quot;%s %d %d %c %c %d&quot;, &amp;xm[i].name, &amp;xm[i].cj1, &amp;xm[i].cj2, &amp;xm[i].a, &amp;xm[i].b, &amp;xm[i].count); int max=0,allsum=0,sum; for(i=0; i&lt;m; i++) &#123; int sum=0; if(xm[i].cj1&gt;80 &amp;&amp; xm[i].count&gt;=1) sum+=8000; if(xm[i].cj1&gt;85 &amp;&amp; xm[i].cj2&gt;80) sum+=4000; if(xm[i].cj1&gt;90) sum+=2000; if(xm[i].cj1&gt;85 &amp;&amp; xm[i].b==&#x27;Y&#x27;) sum+=1000; if(xm[i].cj2&gt;80 &amp;&amp; xm[i].a==&#x27;Y&#x27;) sum+=850; allsum+=sum; if(max&lt;sum) &#123; max=sum; n=i; &#125; &#125; printf(&quot;%s\n%d\n%d\n&quot;,xm[n].name,max,allsum);&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[vijos-p1000]]></title>
     <url>%2F2019%2F09%2F27%2Fvijos-p1000%2F</url>
-    <content type="text"><![CDATA[P10001234567891011import java.io.IOException;import java.util.Scanner;public class Main &#123; public static void main(String[] args) throws IOException &#123; Scanner sc = new Scanner(System.in); int a = sc.nextInt(); int b = sc.nextInt(); System.out.println(a + b); &#125;&#125; 123456789101112#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;algorithm&gt; int main()&#123; int a,b; scanf("%d %d", &amp;a, &amp;b); printf("%d\n", a+b); return 0;&#125;]]></content>
+    <content type="text"><![CDATA[P10001234567891011import java.io.IOException;import java.util.Scanner;public class Main &#123; public static void main(String[] args) throws IOException &#123; Scanner sc = new Scanner(System.in); int a = sc.nextInt(); int b = sc.nextInt(); System.out.println(a + b); &#125;&#125; 123456789101112#include&lt;iostream&gt; #include&lt;cstdio&gt; #include&lt;string.h&gt; #include&lt;stdlib.h&gt;#include&lt;algorithm&gt; int main()&#123; int a,b; scanf(&quot;%d %d&quot;, &amp;a, &amp;b); printf(&quot;%d\n&quot;, a+b); return 0;&#125;]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>Vijos的训练计划</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[helloworld]]></title>
     <url>%2F2019%2F09%2F25%2Fhelloworld%2F</url>
-    <content type="text"><![CDATA[print(“hello-world”)]]></content>
+    <content type="text"><![CDATA[print(“hello-world”) new hello world test]]></content>
   </entry>
 </search>

@@ -128,7 +128,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -138,7 +138,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">27</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">25</span></a>
 
   </li>
   </ul>
@@ -224,16 +224,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>七牛云官方工具Kodo Browser上传很方便，但是上传后没法直接获取直链(虽然直链就是domain/文件名</p><p>查阅官方文档后决定自己做一个简单的demo。</p><ol>
+        <p>七牛云官方工具Kodo Browser上传很方便，但是上传后没法直接获取直链(虽然直链就是domain/文件名</p>
+<p>查阅官方文档后决定自己做一个简单的demo。</p>
+<ol>
 <li><p>此时七牛云bucket为mtjmtj7. 新建一个文件夹用来存放图片。</p>
-<p><img src="http://media.mtjmtj7.cn/images/2019-09-29_c067cf68-9e87-4db9-b16c-e0f7537c7880.png" alt></p>
+<p><img src="http://media.mtjmtj7.cn/images/2019-09-29_c067cf68-9e87-4db9-b16c-e0f7537c7880.png"></p>
 </li>
-<li><p>Java端 官网demo如下（<a href="https://developer.qiniu.com/kodo/sdk/1239/java#server-upload" target="_blank" rel="noopener">https://developer.qiniu.com/kodo/sdk/1239/java#server-upload</a>）</p>
+<li><p>Java端 官网demo如下（<a target="_blank" rel="noopener" href="https://developer.qiniu.com/kodo/sdk/1239/java#server-upload">https://developer.qiniu.com/kodo/sdk/1239/java#server-upload</a>）</p>
 </li>
-</ol><a id="more"></a>
-
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//构造一个带指定 Region 对象的配置类</span></span><br><span class="line">Configuration cfg = <span class="keyword">new</span> Configuration(Region.region0());</span><br><span class="line"><span class="comment">//...其他参数参考类注释</span></span><br><span class="line">UploadManager uploadManager = <span class="keyword">new</span> UploadManager(cfg);</span><br><span class="line"><span class="comment">//...生成上传凭证，然后准备上传</span></span><br><span class="line">String accessKey = <span class="string">"your access key"</span>;</span><br><span class="line">String secretKey = <span class="string">"your secret key"</span>;</span><br><span class="line">String bucket = <span class="string">"your bucket name"</span>;</span><br><span class="line"><span class="comment">//如果是Windows情况下，格式是 D:\\qiniu\\test.png</span></span><br><span class="line">String localFilePath = <span class="string">"/home/qiniu/test.png"</span>;</span><br><span class="line"><span class="comment">//默认不指定key的情况下，以文件内容的hash值作为文件名</span></span><br><span class="line">String key = <span class="keyword">null</span>;</span><br><span class="line">Auth auth = Auth.create(accessKey, secretKey);</span><br><span class="line">String upToken = auth.uploadToken(bucket);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    Response response = uploadManager.put(localFilePath, key, upToken);</span><br><span class="line">    <span class="comment">//解析上传成功的结果</span></span><br><span class="line">    DefaultPutRet putRet = <span class="keyword">new</span> Gson().fromJson(response.bodyString(), DefaultPutRet.class);</span><br><span class="line">    System.out.println(putRet.key);</span><br><span class="line">    System.out.println(putRet.hash);</span><br><span class="line">&#125; <span class="keyword">catch</span> (QiniuException ex) &#123;</span><br><span class="line">    Response r = ex.response;</span><br><span class="line">    System.err.println(r.toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.err.println(r.bodyString());</span><br><span class="line">    &#125; <span class="keyword">catch</span> (QiniuException ex2) &#123;</span><br><span class="line">        <span class="comment">//ignore</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//构造一个带指定 Region 对象的配置类</span></span><br><span class="line">Configuration cfg = <span class="keyword">new</span> Configuration(Region.region0());</span><br><span class="line"><span class="comment">//...其他参数参考类注释</span></span><br><span class="line">UploadManager uploadManager = <span class="keyword">new</span> UploadManager(cfg);</span><br><span class="line"><span class="comment">//...生成上传凭证，然后准备上传</span></span><br><span class="line">String accessKey = <span class="string">&quot;your access key&quot;</span>;</span><br><span class="line">String secretKey = <span class="string">&quot;your secret key&quot;</span>;</span><br><span class="line">String bucket = <span class="string">&quot;your bucket name&quot;</span>;</span><br><span class="line"><span class="comment">//如果是Windows情况下，格式是 D:\\qiniu\\test.png</span></span><br><span class="line">String localFilePath = <span class="string">&quot;/home/qiniu/test.png&quot;</span>;</span><br><span class="line"><span class="comment">//默认不指定key的情况下，以文件内容的hash值作为文件名</span></span><br><span class="line">String key = <span class="keyword">null</span>;</span><br><span class="line">Auth auth = Auth.create(accessKey, secretKey);</span><br><span class="line">String upToken = auth.uploadToken(bucket);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    Response response = uploadManager.put(localFilePath, key, upToken);</span><br><span class="line">    <span class="comment">//解析上传成功的结果</span></span><br><span class="line">    DefaultPutRet putRet = <span class="keyword">new</span> Gson().fromJson(response.bodyString(), DefaultPutRet.class);</span><br><span class="line">    System.out.println(putRet.key);</span><br><span class="line">    System.out.println(putRet.hash);</span><br><span class="line">&#125; <span class="keyword">catch</span> (QiniuException ex) &#123;</span><br><span class="line">    Response r = ex.response;</span><br><span class="line">    System.err.println(r.toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.err.println(r.bodyString());</span><br><span class="line">    &#125; <span class="keyword">catch</span> (QiniuException ex2) &#123;</span><br><span class="line">        <span class="comment">//ignore</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ol start="3">
 <li>在上面设置中，key值为文件名，这是我们可以设置为 <code>images/filename</code> ，images是指定的文件夹，filename是文件名。</li>
@@ -335,7 +335,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -348,7 +348,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -375,7 +375,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -384,12 +384,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">23k</span>
+    <span title="站点总字数">25k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">21 分钟</span>
+    <span title="站点阅读时长">23 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
